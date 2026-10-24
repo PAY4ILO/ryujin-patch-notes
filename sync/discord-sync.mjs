@@ -101,7 +101,13 @@ async function fetchSince(after) {
       await new Promise(res => setTimeout(res, wait));
       continue;
     }
-    if (!r.ok) throw new Error(`Discord ${r.status}: ${await r.text()}`);
+    if (!r.ok) {
+      const body = await r.text();
+      const hint = r.status === 401 ? "the bot token is wrong (DISCORD_TOKEN)"
+        : /50001/.test(body) ? "the bot can't see this channel: check that it is on the server, that DISCORD_CHANNEL_ID is the channel's ID, and that its role has View Channel + Read Message History in that channel"
+        : /10003/.test(body) ? "no channel with this ID (DISCORD_CHANNEL_ID)" : "";
+      throw new Error(`Discord ${r.status}: ${body}${hint ? "\n→ " + hint : ""}`);
+    }
     const batch = await r.json();
     if (!batch.length) break;
     batch.sort((a, b) => (BigInt(a.id) < BigInt(b.id) ? -1 : 1));
