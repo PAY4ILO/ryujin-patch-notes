@@ -11,7 +11,7 @@
       found: (n, p) => `${n} ${plural(n, "изменение", "изменения", "изменений")} в ${p} ${plural(p, "посте", "постах", "постах")}`,
       newest: "Сначала новые", oldest: "Сначала старые",
       showAll: n => `Показать весь пост (${n})`, showLess: "Только совпадения",
-      summary: "Сводка", balanceTag: "Баланс",
+      summary: "Сводка", balanceTag: "Баланс", notTranslated: "пока на английском",
       empty: "Ничего не нашлось. Попробуй другое слово или сбрось фильтры.",
       notice: "Здесь только свежие изменения за последние две недели. Старые раз в полмесяца переносятся в вики и отсюда удаляются.",
       footer: "Неофициальный перевод сообщений разработчиков Ryujin. Названия скиллов, стилей и предметов оставлены как в игре.",
@@ -28,7 +28,7 @@
       found: (n, p) => `${n} ${n === 1 ? "change" : "changes"} in ${p} ${p === 1 ? "post" : "posts"}`,
       newest: "Newest first", oldest: "Oldest first",
       showAll: n => `Show the whole post (${n})`, showLess: "Matches only",
-      summary: "Summary", balanceTag: "Balance",
+      summary: "Summary", balanceTag: "Balance", notTranslated: "not translated yet",
       empty: "Nothing found. Try another word or clear the filters.",
       notice: "Only the latest two weeks of changes are listed here. Every half month the older ones are folded into the wiki and removed.",
       footer: "Unofficial collection of the Ryujin developers' posts. Skill, style and item names are kept as in the game.",
@@ -240,12 +240,13 @@
       const key = p.approx ? "~" + p.id : p.d.slice(0, 10);
       if (key !== lastKey) { html += `<div class="day"><h2>${esc(fmtDay(p, L))}</h2></div>`; lastKey = key; }
       const tag = p.kind === "summary" ? `<span class="tag">${L.summary}</span>` : p.kind === "balance" ? `<span class="tag balance">${L.balanceTag}</span>` : "";
+      const untranslated = p.tr === false && state.lang === "ru" ? `<span class="tag">${L.notTranslated}</span>` : "";
       const title = p.title ? `<h3 class="post-title">${highlight(p.title[state.lang === "ru" ? 1 : 0], toks)}</h3>` : "";
       const note = p.note && (!isFiltering || showAll) ? `<div class="note">${esc(p.note[state.lang === "ru" ? 1 : 0])}</div>` : "";
       const more = isFiltering && matched < p.total
         ? `<div class="more"><button class="linkbtn" data-open="${p.id}">${showAll ? L.showLess : L.showAll(p.total)}</button></div>` : "";
       html += `<article class="post ${p.kind || ""}" id="${p.id}">
-        <div class="post-head"><span class="when">${p.approx ? "" : p.d.slice(11)}</span>${tag}<a class="anchor" href="#${p.id}">#</a></div>
+        <div class="post-head"><span class="when">${p.approx ? "" : p.d.slice(11)}</span>${tag}${untranslated}<a class="anchor" href="#${p.id}">#</a></div>
         ${title}<div class="post-body">${body}${note}${more}</div></article>`;
     }
     $("list").innerHTML = html || `<div class="empty">${L.empty}</div>`;
