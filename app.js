@@ -1,7 +1,7 @@
 (() => {
   const T = {
     ru: {
-      h1: "патчноуты",
+      h1: "патчноуты", navNotes: "Патчноуты", navWiki: "Вики",
       sub: "Все изменения от разработчиков Ryujin (Roblox) в одном месте. Поиск работает на обоих языках сразу.",
       search: "Поиск: скилл, предмет, тема…",
       clear: "Сбросить",
@@ -21,7 +21,7 @@
       locale: "ru-RU"
     },
     en: {
-      h1: "patch notes",
+      h1: "patch notes", navNotes: "Patch notes", navWiki: "Wiki",
       sub: "Every change from the Ryujin (Roblox) developers in one place. Search works across both languages.",
       search: "Search: skill, item, topic…",
       clear: "Clear",
@@ -124,7 +124,9 @@
     applyTheme();
   };
 
-  function tokens() { return norm(state.q).split(/\s+/).filter(Boolean); }
+  // Russian words change endings («банды» / «банд»), so long Cyrillic words are matched by their stem.
+  const stem = t => /[а-я]/.test(t) && t.length >= 5 ? t.slice(0, t.length - (t.length >= 7 ? 2 : 1)) : t;
+  function tokens() { return norm(state.q).split(/\s+/).filter(Boolean).map(stem); }
 
   function highlight(text, toks) {
     let out = esc(text);

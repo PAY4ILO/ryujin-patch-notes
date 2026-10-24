@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node extract.mjs && node fetch-images.mjs && node build.mjs" },
+  "dependencies": { "marked": "^12.0.2" }
+}
