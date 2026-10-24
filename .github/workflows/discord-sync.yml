@@ -16,6 +16,8 @@ concurrency:
 
 jobs:
   sync:
+    # Skipped until the channel is configured, so the schedule doesn't fail in the meantime.
+    if: ${{ vars.DISCORD_CHANNEL_ID != '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
