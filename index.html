@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ryujin Patch Notes</title>
+<meta name="description" content="Searchable Ryujin (Roblox) patch notes in Russian and English.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23d93a2b'/><text x='16' y='23' font-size='19' text-anchor='middle' fill='white' font-family='serif'>龍</text></svg>">
+<style>
+:root {
+  --bg: #0e0d10;
+  --bg-2: #15141a;
+  --card: #1a1920;
+  --line: #2a2831;
+  --text: #ece8e1;
+  --muted: #9b968e;
+  --faint: #6b6760;
+  --accent: #e5483a;
+  --accent-soft: rgba(229, 72, 58, .14);
+  --mark: rgba(242, 184, 75, .32);
+  --fix: #4cc38a;
+  --new: #5aa7ff;
+  --change: #f2b84b;
+  --balance: #b48cff;
+  --perf: #4fc3c9;
+  --shadow: 0 1px 0 rgba(255,255,255,.03) inset, 0 8px 24px rgba(0,0,0,.25);
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f6f3ee; --bg-2: #efebe4; --card: #ffffff; --line: #e3ded5;
+    --text: #1d1b19; --muted: #6d6860; --faint: #9a958c;
+    --accent: #c9321f; --accent-soft: rgba(201, 50, 31, .09); --mark: rgba(242, 184, 75, .45);
+    --fix: #1f9a5f; --new: #2a74d4; --change: #b7801a; --balance: #7a4fd6; --perf: #1d8f95;
+    --shadow: 0 1px 2px rgba(0,0,0,.05);
+  }
+}
+:root[data-theme="light"] {
+  --bg: #f6f3ee; --bg-2: #efebe4; --card: #ffffff; --line: #e3ded5;
+  --text: #1d1b19; --muted: #6d6860; --faint: #9a958c;
+  --accent: #c9321f; --accent-soft: rgba(201, 50, 31, .09); --mark: rgba(242, 184, 75, .45);
+  --fix: #1f9a5f; --new: #2a74d4; --change: #b7801a; --balance: #7a4fd6; --perf: #1d8f95;
+  --shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.55 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+
+header.top { padding-top: 36px; padding-bottom: 20px; position: relative; overflow: hidden; }
+header.top::before {
+  content: "龍"; position: absolute; right: -10px; top: -30px;
+  font: 220px/1 serif; color: var(--accent); opacity: .07; pointer-events: none;
+}
+.brand { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+h1 {
+  font: 700 clamp(26px, 6vw, 40px)/1.05 Unbounded, Inter, sans-serif;
+  margin: 0; letter-spacing: -.01em;
+}
+h1 span { color: var(--accent); }
+.sub { color: var(--muted); margin: 10px 0 0; max-width: 560px; }
+.controls { display: flex; gap: 8px; align-items: center; }
+.seg { display: inline-flex; background: var(--bg-2); border: 1px solid var(--line); border-radius: 10px; padding: 3px; }
+.seg button {
+  border: 0; background: transparent; color: var(--muted); font: 600 13px Inter, sans-serif;
+  padding: 6px 12px; border-radius: 7px; cursor: pointer;
+}
+.seg button[aria-pressed="true"] { background: var(--card); color: var(--text); box-shadow: var(--shadow); }
+.icon-btn {
+  border: 1px solid var(--line); background: var(--bg-2); color: var(--muted);
+  width: 36px; height: 36px; border-radius: 10px; cursor: pointer; font-size: 16px;
+}
+.stats { display: flex; gap: 22px; margin-top: 22px; flex-wrap: wrap; }
+.stat b { display: block; font: 700 22px/1.1 Unbounded, sans-serif; }
+.stat span { color: var(--muted); font-size: 12.5px; }
+
+.bar {
+  position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line); padding: 12px 0 10px;
+}
+.search { position: relative; }
+.search input {
+  width: 100%; font: 16px Inter, sans-serif; color: var(--text);
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 12px 84px 12px 42px; outline: none;
+}
+.search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.search svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--faint); }
+.search .kbd {
+  position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+  font: 12px Inter, sans-serif; color: var(--faint); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px;
+}
+.search .clear {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%); display: none;
+  border: 0; background: var(--bg-2); color: var(--muted); border-radius: 8px; padding: 5px 9px; cursor: pointer; font: 13px Inter, sans-serif;
+}
+.search.has .clear { display: block; }
+.search.has .kbd { display: none; }
+.chips { display: flex; gap: 6px; margin-top: 10px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+  flex: none; border: 1px solid var(--line); background: var(--card); color: var(--muted);
+  font: 500 13px Inter, sans-serif; padding: 5px 11px; border-radius: 999px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+}
+.chip i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.chip small { color: var(--faint); font-size: 11.5px; }
+.chip[aria-pressed="true"] { color: var(--text); border-color: var(--text); }
+.chip.sep { border: 0; background: none; padding: 0 2px; cursor: default; color: var(--line); }
+.row2 { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; gap: 4px 12px; flex-wrap: wrap; }
+.chip.zero { opacity: .45; }
+.found { color: var(--muted); font-size: 13px; }
+.linkbtn { border: 0; background: none; color: var(--muted); font: 500 13px Inter, sans-serif; cursor: pointer; padding: 2px 0; }
+.linkbtn:hover { color: var(--text); }
+
+.notice {
+  margin: 18px 0 0; padding: 11px 14px; border-radius: 12px; font-size: 13.5px;
+  background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.day { margin: 30px 0 10px; display: flex; align-items: baseline; gap: 10px; }
+.day h2 { font: 600 13px Inter, sans-serif; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0; }
+.day::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+.post {
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+  margin-bottom: 10px; box-shadow: var(--shadow); scroll-margin-top: 150px;
+}
+.post.balance { border-color: color-mix(in srgb, var(--balance) 40%, var(--line)); }
+.post.summary { border-style: dashed; }
+.post-head { display: flex; align-items: center; gap: 10px; padding: 12px 16px 4px; flex-wrap: wrap; }
+.ava {
+  width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center;
+  font: 700 12px Unbounded, sans-serif; color: #fff; flex: none;
+}
+.who { font-weight: 600; }
+.when { color: var(--faint); font-size: 13px; }
+.tag { font-size: 11.5px; font-weight: 600; padding: 2px 8px; border-radius: 6px; background: var(--bg-2); color: var(--muted); }
+.tag.balance { color: var(--balance); background: color-mix(in srgb, var(--balance) 14%, transparent); }
+.anchor { margin-left: auto; color: var(--faint); text-decoration: none; font-size: 13px; opacity: 0; transition: opacity .15s; }
+.post:hover .anchor, .anchor:focus { opacity: 1; }
+.post-title { font: 600 16px/1.35 Inter, sans-serif; padding: 2px 16px 0; margin: 0; }
+.post-body { padding: 4px 16px 14px; }
+.sec-h { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin: 14px 0 4px; }
+ul.items { list-style: none; margin: 0; padding: 0; }
+ul.items li { display: grid; grid-template-columns: 14px 1fr; gap: 8px; padding: 5px 0; }
+ul.items li + li { border-top: 1px solid color-mix(in srgb, var(--line) 55%, transparent); }
+.dot { width: 7px; height: 7px; border-radius: 50%; margin-top: 8px; }
+.t-fix .dot { background: var(--fix); } .t-new .dot { background: var(--new); }
+.t-change .dot { background: var(--change); } .t-balance .dot { background: var(--balance); }
+.t-perf .dot { background: var(--perf); }
+.alt { display: block; color: var(--faint); font-size: 13px; margin-top: 2px; }
+.arr { color: var(--accent); font-weight: 600; padding: 0 1px; }
+mark { background: var(--mark); color: inherit; border-radius: 3px; padding: 0 1px; }
+.note { margin-top: 10px; color: var(--muted); font-size: 13.5px; font-style: italic; }
+.more { margin-top: 8px; }
+.milestone {
+  display: flex; align-items: center; gap: 10px; margin: 6px 0 12px; padding: 9px 14px;
+  border-radius: 12px; color: var(--fix); font-weight: 600; font-size: 14px;
+  background: color-mix(in srgb, var(--fix) 10%, transparent); border: 1px solid color-mix(in srgb, var(--fix) 28%, transparent);
+}
+.milestone .when { margin-left: auto; font-weight: 400; }
+.empty { text-align: center; color: var(--muted); padding: 60px 0; }
+footer { color: var(--faint); font-size: 12.5px; padding: 40px 0 50px; text-align: center; }
+@media (max-width: 560px) {
+  .post-head, .post-title, .post-body { padding-left: 13px; padding-right: 13px; }
+  .stats { gap: 16px; }
+  .search .kbd { display: none; }
+}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <div class="brand">
+    <div>
+      <h1>Ryujin <span data-i18n="h1">патчноуты</span></h1>
+      <p class="sub" data-i18n="sub"></p>
+    </div>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Language">
+        <button data-lang="ru">RU</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button class="icon-btn" id="theme" title="Theme">◐</button>
+    </div>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div class="notice" id="notice"></div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="search" id="searchBox">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false">
+      <span class="kbd">/</span>
+      <button class="clear" id="clear"></button>
+    </div>
+    <div class="chips" id="types"></div>
+    <div class="chips" id="topics"></div>
+    <div class="row2">
+      <span class="found" id="found"></span>
+      <span>
+        <button class="linkbtn" id="authorBtn"></button>
+        <span style="color:var(--line)"> · </span>
+        <button class="linkbtn" id="sortBtn"></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="list"></main>
+<footer class="wrap" data-i18n="footer"></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
