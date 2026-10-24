@@ -9,6 +9,8 @@ const read = f => JSON.parse(fs.readFileSync(new URL(f, dir)));
 const { lists, cards, exported } = read("cards.json");
 const ru = read("ru.json");
 const board = read("board.json");
+// Corrections from patch notes newer than the Trello card: replace whole lines or append text.
+const fixes = read("fixes.json");
 
 const byShort = Object.fromEntries(cards.map(c => [c.short, c]));
 const anyName = Object.fromEntries(board.cards.map(c => [c.shortLink, c.name]));
@@ -67,6 +69,22 @@ marked.use({
 });
 const render = md => marked.parse(md).trim();
 
+function applyFixes(c) {
+  let en = c.desc, ruText = translate(c.desc);
+  const mine = fixes.filter(f => f.card === c.short);
+  for (const f of mine) {
+    for (const [find, enNew, ruNew] of f.replace || []) {
+      const ruFind = ru[find] ?? find;
+      if (!en.includes(find)) console.warn(`fix ${c.short}: EN line not found: ${find.slice(0, 50)}`);
+      if (!ruText.includes(ruFind)) console.warn(`fix ${c.short}: RU line not found: ${ruFind.slice(0, 50)}`);
+      en = en.replace(find, enNew);
+      ruText = ruText.replace(ruFind, ruNew);
+    }
+    if (f.append) { en += "\n\n" + f.append[0]; ruText += "\n\n" + f.append[1]; }
+  }
+  return { en, ru: ruText, notes: mine.map(f => [f.note[0], f.note[1], f.date]) };
+}
+
 let untranslatedTitles = 0;
 const out = {
   exported,
@@ -76,11 +94,13 @@ const out = {
 const listIndex = Object.fromEntries(lists.map((l, i) => [l.id, i]));
 for (const c of cards) {
   if (!(c.name in ru)) untranslatedTitles++;
+  const fx = applyFixes(c);
   out.cards[c.short] = {
     n: [c.name, tr(c.name)],
     l: listIndex[c.list],
     c: c.cover ? localImg(c.cover) : null,
-    h: [render(prepare(c.desc, "en")), render(prepare(translate(c.desc), "ru"))],
+    h: [render(prepare(fx.en, "en")), render(prepare(fx.ru, "ru"))],
+    x: fx.notes.length ? fx.notes : undefined,
     u: c.updated.slice(0, 10)
   };
 }

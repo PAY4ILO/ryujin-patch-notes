@@ -1,10 +1,6 @@
 {
  "lists": [
   {
-   "id": "6725139fd9ce0dc347099dbd",
-   "name": "General Info"
-  },
-  {
    "id": "6742c7bc336c1d558e083f15",
    "name": "Game Info"
   },
@@ -122,16 +118,6 @@
    "updated": "2026-09-27T22:16:39.643Z"
   },
   {
-   "id": "6a84ee687fbd140b9861040f",
-   "short": "5iFWnRYl",
-   "list": "6725139fd9ce0dc347099dbd",
-   "name": "Index",
-   "desc": "",
-   "cover": null,
-   "atts": {},
-   "updated": "2026-08-18T23:44:42.397Z"
-  },
-  {
    "id": "694c2b28b7d89fa5ba4f657b",
    "short": "l43lS0Zh",
    "list": "672c768a2955829f65ff9c42",
@@ -149,41 +135,6 @@
     }
    },
    "updated": "2026-09-06T19:27:53.698Z"
-  },
-  {
-   "id": "672c73da6eea1e119e38c385",
-   "short": "da8y1OuE",
-   "list": "6725139fd9ce0dc347099dbd",
-   "name": "How to navigate Trello",
-   "desc": "If you can't see the whole card, click the Read More button (down arrow for mobile) to show the rest of the content.\n\n---\n\nIn Trello, you can find information about the game on cards, like this one.\nTo find what you are looking for, look at the list names at the top, like Info, to see the categories.\n\n![image.png](https://trello.com/1/cards/672c73da6eea1e119e38c385/attachments/6782d2d6d6157e6232c55c2e/download/image.png)\n\n---\n\nIf you don't see what you are looking for, you can scroll to the left or right by clicking and dragging at the bar on the bottom. Alternatively, if you click and hold on any blank space in the background (not a card), you can move your mouse to the left or right to scroll.\n\n![image.png](https://trello.com/1/cards/62927a761ec78d89261b9a73/attachments/62b1e8baf03cdf1f9c71d803/download/image.png)\n\n---\n\nOnce you find the category you are looking for, you can scroll through the list using your mouse wheel or clicking and dragging the bar on the right until you find what you need.\n\n![image.png](https://trello.com/1/cards/672c73da6eea1e119e38c385/attachments/672c73ffce2dd84bac95ff30/download/image.png)",
-   "cover": "672c741069412bfb887c6b2a",
-   "atts": {
-    "672c73ffce2dd84bac95ff30": {
-     "name": "image.png",
-     "mime": "image/png",
-     "url": "https://trello.com/1/cards/672c73da6eea1e119e38c385/attachments/672c73ffce2dd84bac95ff30/download/image.png",
-     "preview": "https://trello.com/1/cards/672c73da6eea1e119e38c385/attachments/672c73ffce2dd84bac95ff30/previews/672c7401ce2dd84bac960142/download/image.webp",
-     "w": 296,
-     "h": 604
-    },
-    "672c741069412bfb887c6b2a": {
-     "name": "Trello.png",
-     "mime": "image/png",
-     "url": "https://trello.com/1/cards/672c73da6eea1e119e38c385/attachments/672c741069412bfb887c6b2a/download/Trello.png",
-     "preview": "https://trello.com/1/cards/672c73da6eea1e119e38c385/attachments/672c741069412bfb887c6b2a/previews/672c741169412bfb887c6ce9/download/Trello.webp",
-     "w": 250,
-     "h": 150
-    },
-    "6782d2d6d6157e6232c55c2e": {
-     "name": "image.png",
-     "mime": "image/png",
-     "url": "https://trello.com/1/cards/672c73da6eea1e119e38c385/attachments/6782d2d6d6157e6232c55c2e/download/image.png",
-     "preview": "https://trello.com/1/cards/672c73da6eea1e119e38c385/attachments/6782d2d6d6157e6232c55c2e/previews/6782d2d6d6157e6232c55c35/download/image.webp",
-     "w": 600,
-     "h": 32
-    }
-   },
-   "updated": "2025-01-11T20:21:47.914Z"
   },
   {
    "id": "6a87b0ef5de83a3631e76ce0",
@@ -522,41 +473,6 @@
     }
    },
    "updated": "2026-08-22T18:26:54.107Z"
-  },
-  {
-   "id": "6725516177c16d7b038fca02",
-   "short": "Z1s9iymW",
-   "list": "6725139fd9ce0dc347099dbd",
-   "name": "About the game",
-   "desc": "Ryujin is a fighting game focused on PvP (Player vs Player) where players train their stats up and compete against each other. There are multiple different fighting styles, and you can choose 5 skills from any styles to create your own build.\n\nYou can view an ingame guide by clicking the 3 dots in the top left then selecting the ? icon.\n\n‌\n\n![image.png](https://trello.com/1/cards/6725516177c16d7b038fca02/attachments/673a9e96d3057d553d2500a4/download/image.png)\n\n![image.png](https://trello.com/1/cards/6725516177c16d7b038fca02/attachments/673a9ea0410744c968a96d81/download/image.png)",
-   "cover": "672c7454e9c405573d635be0",
-   "atts": {
-    "672c7454e9c405573d635be0": {
-     "name": "noFilter.webp",
-     "mime": "image/webp",
-     "url": "https://trello.com/1/cards/6725516177c16d7b038fca02/attachments/672c7454e9c405573d635be0/download/noFilter.webp",
-     "preview": "https://trello.com/1/cards/6725516177c16d7b038fca02/attachments/672c7454e9c405573d635be0/previews/672c7455e9c405573d635bea/download/noFilter.webp",
-     "w": 256,
-     "h": 256
-    },
-    "673a9e96d3057d553d2500a4": {
-     "name": "image.png",
-     "mime": "image/png",
-     "url": "https://trello.com/1/cards/6725516177c16d7b038fca02/attachments/673a9e96d3057d553d2500a4/download/image.png",
-     "preview": "https://trello.com/1/cards/6725516177c16d7b038fca02/attachments/673a9e96d3057d553d2500a4/previews/673a9e97d3057d553d2500a8/download/image.webp",
-     "w": 250,
-     "h": 150
-    },
-    "673a9ea0410744c968a96d81": {
-     "name": "image.png",
-     "mime": "image/png",
-     "url": "https://trello.com/1/cards/6725516177c16d7b038fca02/attachments/673a9ea0410744c968a96d81/download/image.png",
-     "preview": "https://trello.com/1/cards/6725516177c16d7b038fca02/attachments/673a9ea0410744c968a96d81/previews/673a9ea1410744c968a96d85/download/image.webp",
-     "w": 250,
-     "h": 150
-    }
-   },
-   "updated": "2024-11-24T06:29:33.553Z"
   },
   {
    "id": "684df5eef12d08a97a5c2aaa",
@@ -3383,16 +3299,6 @@
     }
    },
    "updated": "2026-08-21T23:54:33.224Z"
-  },
-  {
-   "id": "6725515cfcf5c7ab010bf9b1",
-   "short": "IXNIoIAr",
-   "list": "6725139fd9ce0dc347099dbd",
-   "name": "Links",
-   "desc": "Game :\n\n[https://www.roblox.com/games/18852831741/Ryujin](https://www.roblox.com/games/18852831741/Ryujin)\n\nGroup:\n\n[https://www.roblox.com/groups/34758135/Martial-Ascension#!/about](https://www.roblox.com/groups/34758135/Martial-Ascension#!/about)\n\nDiscord:\n\n[https://discord.gg/ryujinrbx](https://discord.gg/ryujinrbx)\n\nSupport Server:\n\n[https://discord.gg/ryujinsupport](https://discord.gg/ryujinsupport)",
-   "cover": null,
-   "atts": {},
-   "updated": "2026-08-18T23:45:29.239Z"
   },
   {
    "id": "67460ead4a8b5a51f14d713e",

@@ -1,80 +1,16 @@
-// Ryujin patch notes. Each entry is one dev post.
-// d: "YYYY-MM-DD HH:MM" (local time of the post), a: author,
-// items: [en, ru] pairs, sections: {h: [en, ru], items: [...]},
-// approx: [en, ru] label when the exact date is unknown,
-// kind: "summary" | "balance" | "milestone".
+// Ryujin patch notes, newest two weeks only. Older posts are moved into the wiki and deleted.
+// d: "YYYY-MM-DD HH:MM", items: [en, ru] pairs, sections: {h: [en, ru], items: [...]},
+// approx: [en, ru] label when the exact date is unknown, kind: "summary" | "balance" | "milestone".
 // New posts go anywhere in the list: the page sorts by d.
 window.PATCHES = [
 {
-  id: "before-1013", d: "2026-10-12 12:00", a: null,
-  approx: ["Before Oct 13", "До 13 октября"],
-  items: [
-    ["Fixed visual bug with the Kettlebell Pistol Squat weight requirement", "Исправлен визуальный баг с требованием к весу у Kettlebell Pistol Squat"],
-    ["Fixed dashing before taking a bus stop from the gang base to Nitro sometimes bugging you into being sideways", "Исправлено: рывок перед поездкой на автобусе от базы банды до Nitro иногда клал персонажа набок"],
-    ["Fixed Five Hit Barrage", "Исправлен Five Hit Barrage"],
-    ["Fixed NPC / Cargo mission bug", "Исправлен баг миссии с NPC / грузом (Cargo)"],
-    ["Fixed Mission Completion bug", "Исправлен баг завершения миссий"],
-    ["Fixed Makunouchi / Last Stand", "Исправлены Makunouchi / Last Stand"],
-    ["Fixed Emotes UI scaling", "Исправлено масштабирование интерфейса эмоций"],
-    ["Fixed the pushback effect staying and both fighters staying invincible after a duel ends", "Исправлено: после конца дуэли оставался эффект отталкивания, и оба бойца оставались неуязвимыми"],
-    ["Fixed no M2 cooldown", "Исправлено отсутствие кулдауна у M2"],
-    ["Fixed Mission / Raid NPCs: they now all come at you together, but only one attacks at a time", "Исправлены NPC миссий и рейдов: теперь идут на вас все вместе, но атакует только один за раз"],
-    ["Fixed Stomp after a ground stun grab: it now keeps every boss down", "Исправлен Stomp после захвата с оглушением на земле: теперь удерживает на земле любого босса"],
-    ["Fixed public data wipe bug", "Исправлен баг со сбросом публичных данных (wipe)"],
-    ["Fixed some styles' M2 hitbox disappearing", "Исправлено исчезновение хитбокса M2 у некоторых стилей"],
-    ["Fixed M1 endlag issue (client-server desync)", "Исправлен эндлаг M1 (рассинхрон клиента и сервера)"],
-    ["Fixed gliding M1/skill bug", "Исправлен баг со «скольжением» при M1 и скиллах"]
-  ],
-  note: ["Console users: still need more data to know what's wrong, some profiling was done.", "Игроки на консолях: нужно больше данных, чтобы понять, в чём проблема. Проведено профилирование."]
-},
-{
-  id: "1013-0332", d: "2026-10-13 03:32", a: "twusta",
-  items: [
-    ["Added Makunouchi & Kamsaeng Evolved Skills to the Clan Skills Index, with scaling, stats and everything", "Эволюционные скиллы Makunouchi и Kamsaeng добавлены в Индекс клановых скиллов со скейлингом, статами и всем остальным"]
-  ]
-},
-{
-  id: "1014-0523", d: "2026-10-14 05:23", a: "twusta",
-  items: [
-    ["Fixed: getting hit in the final second of your M1 could cancel it, and the hit would not connect", "Исправлено: если получить удар в последний момент своего M1, он мог отмениться и не попасть"]
-  ]
-},
-{
-  id: "1014-day", d: "2026-10-14 12:00", a: "twusta",
-  approx: ["Oct 14, daytime", "14 октября, днём"],
-  items: [
-    ["Fixed the “Masterful Show-Boxing” quest: gain wasn't increasing as you progressed, and at 50 BS it refused to give stats", "Исправлен квест «Masterful Show-Boxing»: прирост не увеличивался по мере прохождения, а на 50 BS статы не выдавались"],
-    ["Applied a potential fix for Iron Boulder sometimes not reflecting damage", "Возможное исправление: Iron Boulder иногда не отражал урон"]
-  ]
-},
-{
-  id: "1014-1925", d: "2026-10-14 19:25", a: "Arshy",
-  items: [
-    ["Fixed shop UI scale", "Исправлен масштаб интерфейса магазина"],
-    ["Fixed jump stun state", "Исправлено состояние оглушения в прыжке"],
-    ["Fixed Primal Instinct delay on the hyper", "Исправлена задержка Primal Instinct на гипере"]
-  ]
-},
-{
-  id: "1014-2017", d: "2026-10-14 20:17", a: "Arshy",
-  items: [
-    ["Fixed Slayer achievement kills bug", "Исправлен подсчёт убийств в достижении Slayer"],
-    ["Fixed gliding M1/skill bug", "Исправлен баг со «скольжением» при M1 и скиллах"],
-    ["Fixed grounded state flings", "Исправлены улёты (флинги) в состоянии на земле"],
-    ["Fixed High Stick Shot skill bug", "Исправлен баг скилла High Stick Shot"],
-    ["Fixed styles sometimes unequipping after using skills", "Исправлено: стиль иногда снимался после использования скиллов"],
-    ["Fixed Mikazuchi / Lightning God bugs", "Исправлены баги Mikazuchi / Lightning God"],
-    ["Fixed gang ghosting issues when renamed", "Исправлены «призраки» банды после переименования"]
-  ]
-},
-{
-  id: "1015-0721", d: "2026-10-15 07:21", a: "twusta",
+  id: "1015-0721", d: "2026-10-15 07:21",
   sections: [
-    { h: ["New additions", "Новое"], items: [
+    { h: ["New additions","Новое"], items: [
       ["Added Pure-Style Passives to the Index", "В Индекс добавлены пассивки чистых стилей (Pure-Style Passives)"],
       ["Added to the Index how much damage % you need to deal before getting boss drops", "В Индекс добавлено, какой % урона нужно нанести, чтобы получить дроп с босса"]
     ]},
-    { h: ["Fixes", "Исправления"], items: [
+    { h: ["Fixes","Исправления"], items: [
       ["Fixed Mountainous Pulse Strike not doing damage when you get hit mid-skill even though you have hyperarmor", "Исправлено: Mountainous Pulse Strike не наносил урон, если вас ударили посреди скилла, хотя была гиперброня"],
       ["Fixed the blocking animation sometimes staying if you press block for a very short time", "Исправлено: анимация блока иногда оставалась после очень короткого нажатия блока"],
       ["Fixed the 6th skill obtained from Gifted sometimes not activating from its key no matter how many times you press it (it worked with a mouse click)", "Исправлено: 6-й скилл, полученный от Gifted, иногда не срабатывал по клавише, сколько ни жми (кликом мыши работал)"],
@@ -84,23 +20,23 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1015-1618", d: "2026-10-15 16:18", a: "Arshy",
+  id: "1015-1618", d: "2026-10-15 16:18",
   items: [
     ["Fixed backwards running on phone", "Исправлен бег задом наперёд на телефоне"],
     ["Fixed Ohma naked and buggy animations", "Исправлены «голый» Ohma и его кривые анимации"],
     ["Further fixes for the M1 gliding/skill bug", "Ещё исправления бага со «скольжением» при M1 и скиллах"],
     ["Fixes for Always-Up-To-Date M2 not registering", "Исправления: M2 у Always-Up-To-Date не засчитывался"]
   ],
-  note: ["Further fixes and optimisations needed. Everything will be published afterwards.", "Нужны ещё исправления и оптимизации, после этого всё выпустят."]
+  note: ["Further fixes and optimisations needed. Everything will be published afterwards.","Нужны ещё исправления и оптимизации, после этого всё выпустят."]
 },
 {
-  id: "1015-1935", d: "2026-10-15 19:35", a: "twusta",
+  id: "1015-1935", d: "2026-10-15 19:35",
   items: [
     ["Added a new setting “Hide Player Scars”", "Добавлена настройка «Hide Player Scars» (скрывать шрамы игроков)"]
   ]
 },
 {
-  id: "1016-0621", d: "2026-10-16 06:21", a: "twusta",
+  id: "1016-0621", d: "2026-10-16 06:21",
   items: [
     ["Added a Softcaps tab to the Index", "В Индекс добавлена вкладка софткапов (Softcaps)"],
     ["Added a “Hide Player Scars” setting", "Добавлена настройка «Hide Player Scars» (скрывать шрамы игроков)"],
@@ -118,7 +54,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1016-0705", d: "2026-10-16 07:05", a: "twusta",
+  id: "1016-0705", d: "2026-10-16 07:05",
   items: [
     ["Thug Crystal (Professional Pickpocket) cooldown is now 5 minutes per player instead of 10 minutes for everyone", "Кулдаун Thug Crystal (Professional Pickpocket) теперь 5 минут на каждого игрока вместо 10 минут на всех"],
     ["Added M1 & M2 stats (damage, range, debounce, cooldowns) for every style to the Index", "В Индекс добавлены статы M1 и M2 (урон, дальность, дебаунс, кулдауны) для каждого стиля"],
@@ -133,7 +69,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1016-1957", d: "2026-10-16 19:57", a: "twusta",
+  id: "1016-1957", d: "2026-10-16 19:57",
   items: [
     ["Added a “Disable Mode Camera Cutscene” setting (Settings → Other) that keeps your camera free when you pop mode", "Добавлена настройка «Disable Mode Camera Cutscene» (Настройки → Other): камера остаётся свободной при включении режима"],
     ["Added Psyche restrictions to the Psyches Index (max copies and max per group)", "В Индекс Psyche добавлены ограничения (макс. копий и макс. на группу)"],
@@ -152,7 +88,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1016-2019", d: "2026-10-16 20:19", a: "twusta",
+  id: "1016-2019", d: "2026-10-16 20:19",
   items: [
     ["Fixed Five Hit Barrage ignoring muscle softcaps, so muscle no longer scales its damage without limit", "Исправлено: Five Hit Barrage игнорировал софткапы мышц, теперь мышцы не разгоняют его урон без предела"],
     ["Fixed the mode bar sometimes showing partly full when joining a server", "Исправлено: шкала режима иногда была частично заполнена при входе на сервер"],
@@ -161,7 +97,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1017-0532", d: "2026-10-17 05:32", a: "twusta",
+  id: "1017-0532", d: "2026-10-17 05:32",
   items: [
     ["Added emote syncing: using the same emote as someone near you syncs your animation and sound with theirs", "Добавлена синхронизация эмоций: если рядом кто-то делает ту же эмоцию, анимация и звук синхронизируются"],
     ["Added a Mobile section in Settings with mobile button size, button opacity and hotbar size (Small, Medium, Large)", "В настройках появился раздел Mobile: размер и прозрачность кнопок, размер хотбара (Small, Medium, Large)"],
@@ -185,7 +121,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1017-1842", d: "2026-10-17 18:42", a: "twusta",
+  id: "1017-1842", d: "2026-10-17 18:42",
   items: [
     ["Fixed multi-hit skills like Sunfire and Flurry Kick not giving poise on their last hit: they now give 1 poise on the first hit and 1 on the last", "Исправлено: многоударные скиллы вроде Sunfire и Flurry Kick не давали пойз последним ударом; теперь 1 пойз за первый удар и 1 за последний"],
     ["Fixed Jack of All Trades not boosting grab skills", "Исправлено: Jack of All Trades не усиливал скиллы-захваты"],
@@ -197,11 +133,13 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1017-1847", d: "2026-10-17 18:47", a: "Arshy", kind: "milestone",
-  items: [["Published", "Выпущено в игру"]]
+  id: "1017-1847", d: "2026-10-17 18:47", kind: "milestone",
+  items: [
+    ["Published", "Выпущено в игру"]
+  ]
 },
 {
-  id: "1017-1931", d: "2026-10-17 19:31", a: "Arshy",
+  id: "1017-1931", d: "2026-10-17 19:31",
   items: [
     ["Fixed Duel Zone bugs", "Исправлены баги дуэльной зоны"],
     ["Fixed muscle reflex bugs", "Исправлены баги рефлекса у мышечного телосложения"],
@@ -215,13 +153,13 @@ window.PATCHES = [
     ["Removed some unnecessary logging on console", "Убрано лишнее логирование в консоли"],
     ["A bunch of map and graphics optimisations", "Множество оптимизаций карт и графики"]
   ],
-  note: ["All changes published.", "Все изменения выпущены в игру."]
+  note: ["All changes published.","Все изменения выпущены в игру."]
 },
 {
-  id: "1018-0209", d: "2026-10-18 02:09", a: "twusta", kind: "summary",
-  title: ["New QoLs and More! (summary of recent changes)", "Новые удобства и не только! (сводка последних изменений)"],
+  id: "1018-0209", d: "2026-10-18 02:09", kind: "summary",
+  title: ["New QoLs and More! (summary of recent changes)","Новые удобства и не только! (сводка последних изменений)"],
   sections: [
-    { h: ["Settings", "Настройки"], items: [
+    { h: ["Settings","Настройки"], items: [
       ["Added a Disable Lighting Bloom option", "Добавлена опция отключения свечения (Disable Lighting Bloom)"],
       ["Added a Disable Depth of Field option", "Добавлена опция отключения глубины резкости (Disable Depth of Field)"],
       ["Added a Low Detail Mode option", "Добавлен режим низкой детализации (Low Detail Mode)"],
@@ -230,7 +168,7 @@ window.PATCHES = [
       ["Added a Disable Mode Camera Cutscene setting (Settings → Other) that keeps your camera free when you pop mode", "Добавлена настройка Disable Mode Camera Cutscene (Настройки → Other): камера остаётся свободной при включении режима"],
       ["Added a Mobile section in Settings with mobile button size, button opacity and hotbar size (Small, Medium, Large)", "В настройках появился раздел Mobile: размер и прозрачность кнопок, размер хотбара (Small, Medium, Large)"]
     ]},
-    { h: ["Index", "Индекс"], items: [
+    { h: ["Index","Индекс"], items: [
       ["Added Pure-Style Passives to the Index", "В Индекс добавлены пассивки чистых стилей"],
       ["Added how much damage % you need to deal before getting boss drops to the Index", "В Индекс добавлено, какой % урона нужен для дропа с босса"],
       ["Added a Softcaps tab to the Index", "В Индекс добавлена вкладка софткапов"],
@@ -238,7 +176,7 @@ window.PATCHES = [
       ["Added Psyche restrictions to the Psyches Index (max copies and max per group)", "В Индекс Psyche добавлены ограничения (макс. копий и макс. на группу)"],
       ["Every Mode page in the Index now shows the real in-game numbers", "Все страницы режимов в Индексе теперь показывают реальные игровые числа"]
     ]},
-    { h: ["QoL", "Удобство"], items: [
+    { h: ["QoL","Удобство"], items: [
       ["Added Emote Syncing: using the same emote as someone near you syncs your animation and sound with theirs", "Синхронизация эмоций: если рядом кто-то делает ту же эмоцию, анимация и звук синхронизируются"],
       ["You can now sell Boss Crystals (₩10,000,000) and Gene Unlimiters (₩5,000,000) to the Black Market", "Теперь на Чёрном рынке можно продать Boss Crystal (₩10 000 000) и Gene Unlimiter (₩5 000 000)"],
       ["Mode bar now waits 3 seconds out of combat before it starts dropping", "Шкала режима начинает убывать только через 3 секунды вне боя"],
@@ -247,16 +185,16 @@ window.PATCHES = [
       ["Food app list is now in the middle and scrolls further, so Coffee and Banana are easier to buy on mobile", "Список в приложении еды теперь по центру и прокручивается дальше: Coffee и Banana проще купить на телефоне"],
       ["Duel rings no longer push players back", "Дуэльные ринги больше не отталкивают игроков"]
     ]},
-    { h: ["Boss Card", "Карта босса"], items: [
+    { h: ["Boss Card","Карта босса"], items: [
       ["Thug Crystal (Professional Pickpocket) cooldown is now 5 minutes per player instead of 10 minutes for everyone", "Кулдаун Thug Crystal (Professional Pickpocket) теперь 5 минут на игрока вместо 10 минут на всех"]
     ]},
-    { h: ["Gang System", "Система банд"], items: [
+    { h: ["Gang System","Система банд"], items: [
       ["Re-added the Gang Relations System (gang allies and enemies)", "Возвращена система отношений банд (союзники и враги)"]
     ]}
   ]
 },
 {
-  id: "1018-0645", d: "2026-10-18 06:45", a: "twusta",
+  id: "1018-0645", d: "2026-10-18 06:45",
   items: [
     ["Fixed the Settings menu text not fitting properly on mobile", "Исправлено: текст меню настроек не помещался на мобильных"],
     ["Fixed your own name showing above your head after respawning", "Исправлено: после возрождения над головой показывался ваш ник"],
@@ -270,7 +208,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1018-0707", d: "2026-10-18 07:07", a: "twusta",
+  id: "1018-0707", d: "2026-10-18 07:07",
   items: [
     ["Fixed Fashion Icon tiers II and III needing the wrong amount of accessories (now 25 and 50) and progress counting accessories you no longer own", "Исправлено: уровни II и III Fashion Icon требовали неверное число аксессуаров (теперь 25 и 50), а прогресс учитывал аксессуары, которых у вас уже нет"],
     ["Fixed a stray “Objective 0/0” line showing on claimed achievements", "Убрана лишняя строка «Objective 0/0» у полученных достижений"],
@@ -278,7 +216,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1018-2140", d: "2026-10-18 21:40", a: "twusta",
+  id: "1018-2140", d: "2026-10-18 21:40",
   items: [
     ["Fixed Professional Pickpocket's bank cut disappearing instead of going into the robber's bank, and victims losing it twice", "Исправлено: доля из банка от Professional Pickpocket пропадала вместо того, чтобы идти в банк грабителя, а жертвы теряли её дважды"],
     ["Fixed being unable to perfect block on mobile by swiping off the Block button", "Исправлено: на мобильных нельзя было сделать идеальный блок, смахнув палец с кнопки Block"],
@@ -288,7 +226,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1019-0016", d: "2026-10-19 00:16", a: "twusta",
+  id: "1019-0016", d: "2026-10-19 00:16",
   items: [
     ["Fixed Sunfire's stun stacking up to around 2 seconds: it now refreshes per hit and ends shortly after the last one", "Исправлено: оглушение Sunfire копилось примерно до 2 секунд; теперь обновляется с каждым ударом и заканчивается вскоре после последнего"],
     ["Fixed using Flashstep while selecting a skill or mount sometimes leaving you holding both", "Исправлено: Flashstep во время выбора скилла или маунта иногда оставлял в руках оба"],
@@ -298,14 +236,14 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1019-0222", d: "2026-10-19 02:22", a: "twusta",
+  id: "1019-0222", d: "2026-10-19 02:22",
   items: [
     ["Updated models for Heaven Fang Book, Demonsbane Scroll, Guihun Manual, Fa Jin Scroll", "Обновлены модели Heaven Fang Book, Demonsbane Scroll, Guihun Manual, Fa Jin Scroll"],
     ["Renamed Heaven Fang Book → Heaven Fang Scroll", "Heaven Fang Book переименован → Heaven Fang Scroll"]
   ]
 },
 {
-  id: "1019-0441", d: "2026-10-19 04:41", a: "twusta",
+  id: "1019-0441", d: "2026-10-19 04:41",
   items: [
     ["Fixed the Index saying Suibian only scales with Fat if you're fat: it always scales with Fat / 300", "Исправлено: Индекс писал, что Suibian скейлится от жира, только если вы толстый; на деле всегда Fat / 300"],
     ["Fixed Final Form not boosting Ultra Instinct's battle sense scaling", "Исправлено: Final Form не усиливал скейлинг Ultra Instinct от Battle Sense"],
@@ -315,7 +253,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1019-2239", d: "2026-10-19 22:39", a: "twusta",
+  id: "1019-2239", d: "2026-10-19 22:39",
   items: [
     ["Fixed the Index not showing guardbreak for God Glow, Blast Core, Whale Burial, Body Slam, Thirteen-Fold Kill, Burmese Iron Hammer, Darkness Blow, Three-Level Attack, Inferno Nirvana Kick, Flicker Jabs, Pummel, Shoulder Bash, Helicóptero and Ironbreaker", "Исправлено: Индекс не показывал пробитие блока у God Glow, Blast Core, Whale Burial, Body Slam, Thirteen-Fold Kill, Burmese Iron Hammer, Darkness Blow, Three-Level Attack, Inferno Nirvana Kick, Flicker Jabs, Pummel, Shoulder Bash, Helicóptero и Ironbreaker"],
     ["Added Inferno Nirvana Kick's burn duration to the Index", "В Индекс добавлена длительность горения от Inferno Nirvana Kick"],
@@ -331,7 +269,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1023-0058", d: "2026-10-23 00:58", a: "Arshy",
+  id: "1023-0058", d: "2026-10-23 00:58",
   items: [
     ["Fixed dash M1s not going the full dash distance", "Исправлено: M1 в рывке не проходили всю дистанцию рывка"],
     ["Fixed holding M1 stopping your second dash", "Исправлено: зажатый M1 обрывал второй рывок"],
@@ -355,8 +293,8 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1023-later", d: "2026-10-23 12:00", a: null,
-  approx: ["Oct 23–24", "23–24 октября"],
+  id: "1023-later", d: "2026-10-23 12:00",
+  approx: ["Oct 23–24","23–24 октября"],
   items: [
     ["Fixed allied district payouts ignoring money psyches", "Исправлено: выплаты с союзных районов игнорировали денежные Psyche"],
     ["Fixed gang renames pulling members out of their new gang", "Исправлено: переименование банды выдёргивало участников из их новой банды"],
@@ -386,7 +324,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1024-1915", d: "2026-10-24 19:15", a: "Arshy",
+  id: "1024-1915", d: "2026-10-24 19:15",
   items: [
     ["Fixed PB / Lean Reflex", "Исправлены PB / Lean Reflex"],
     ["Fixed Guihun randomly gaining damage", "Исправлено: Guihun случайно набирал урон"],
@@ -398,7 +336,7 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1025-0100", d: "2026-10-25 01:00", a: "Arshy",
+  id: "1025-0100", d: "2026-10-25 01:00",
   items: [
     ["Added gang name colours above players' heads: same gang (green), allied gangs (blue), other gangs (red), no gang (white)", "Цвет названия банды над головой: своя банда — зелёный, союзные — синий, другие — красный, без банды — белый"],
     ["Fixed bounty and fame colours not showing on the leaderboard on join", "Исправлено: цвета награды (bounty) и славы не отображались в таблице лидеров при входе"],
@@ -406,68 +344,70 @@ window.PATCHES = [
   ]
 },
 {
-  id: "1025-0127", d: "2026-10-25 01:27", a: "Arshy", kind: "milestone",
-  items: [["Published all the changes so far", "Выпущены все изменения на данный момент"]]
+  id: "1025-0127", d: "2026-10-25 01:27", kind: "milestone",
+  items: [
+    ["Published all the changes so far", "Выпущены все изменения на данный момент"]
+  ]
 },
 {
-  id: "balance-1025", d: "2026-10-25 01:30", a: null, kind: "balance",
-  approx: ["Undated (latest)", "Без даты (последнее)"],
-  title: ["Balance changes", "Изменения баланса"],
+  id: "balance-1025", d: "2026-10-25 01:30", kind: "balance",
+  approx: ["Undated (latest)","Без даты (последнее)"],
+  title: ["Balance changes","Изменения баланса"],
   sections: [
-    { h: ["Softcaps", "Софткапы"], items: [
+    { h: ["Softcaps","Софткапы"], items: [
       ["Durability 32000 softcap: 10% → 15%", "Софткап выносливости (Durability) на 32000: 10% → 15%"]
     ]},
-    { h: ["Tokita", "Tokita"], items: [
+    { h: ["Tokita","Tokita"], items: [
       ["Flame Kata: Agility/160 → Agility/155", "Flame Kata: Agility/160 → Agility/155"]
     ]},
-    { h: ["Aikido", "Aikido"], items: [
+    { h: ["Aikido","Aikido"], items: [
       ["Skyward Throw: success CD 40s → 35s; base damage 13 → 12.2; now also deals 2% max health damage; 1 arm break → 2 arm breaks", "Skyward Throw: кулдаун при успехе 40 с → 35 с; базовый урон 13 → 12.2; теперь также наносит 2% от макс. здоровья; 1 перелом руки → 2 перелома рук"],
       ["Rotary Shift: 1 leg break → 1 leg + 2 arm breaks", "Rotary Shift: 1 перелом ноги → 1 ноги + 2 рук"]
     ]},
-    { h: ["Low Stance (Aikido)", "Low Stance (Aikido)"], items: [
+    { h: ["Low Stance (Aikido)","Low Stance (Aikido)"], items: [
       ["Strength/160 → Strength/130", "Strength/160 → Strength/130"],
       ["Agility/200 → Agility/185", "Agility/200 → Agility/185"],
       ["UM/333 → UM/450 (1350)", "UM/333 → UM/450 (1350)"]
     ]},
-    { h: ["Hatsumi", "Hatsumi"], items: [
+    { h: ["Hatsumi","Hatsumi"], items: [
       ["M2 comes out 25% faster", "M2 выходит на 25% быстрее"],
       ["15% counter damage buff → 12.5% Aikido and counter damage buff (Aikido counters don't get this buff twice)", "Бафф урона контратак 15% → 12.5% к урону Aikido и контратак (контратаки Aikido не получают его дважды)"],
       ["Counters' added BS scaling: bs/2000 → bs/1000", "Добавочный скейлинг контратак от BS: bs/2000 → bs/1000"]
     ]},
-    { h: ["Lightning God", "Lightning God"], items: [
+    { h: ["Lightning God","Lightning God"], items: [
       ["Teleport dashes removed and moved to the “Electrified Dashes” card; instead your dashes now go 15% further", "Телепорт-рывки убраны и перенесены в карту «Electrified Dashes»; вместо этого рывки теперь на 15% дальше"]
     ]},
-    { h: ["Guihun", "Guihun"], items: [
+    { h: ["Guihun","Guihun"], items: [
       ["Overclocked: Guihun % increase 15% → 10%, duration 25% → 33% shorter", "Overclocked: прирост Guihun % 15% → 10%, длительность короче на 25% → на 33%"],
       ["Each 1% increases muscle by 1% → 0.75%", "Каждый 1% увеличивает мышцы на 1% → 0.75%"],
       ["Each 1% increases the damage buff by 1% → 0.75%", "Каждый 1% увеличивает бафф урона на 1% → 0.75%"]
     ]},
-    { h: ["Final Form", "Final Form"], items: [
+    { h: ["Final Form","Final Form"], items: [
       ["Price reduced to 1250", "Цена снижена до 1250"],
       ["10% mode bar gain removed", "Убран прирост шкалы режима на 10%"],
       ["Health and damage debuff 5% → 7.5%", "Дебафф здоровья и урона 5% → 7.5%"]
     ]},
-    { h: ["Professional Pickpocket", "Professional Pickpocket"], items: [
+    { h: ["Professional Pickpocket","Professional Pickpocket"], items: [
       ["Cooldown 5 minutes per player → 15 minutes", "Кулдаун 5 минут на игрока → 15 минут"]
     ]},
-    { h: ["Carnage", "Carnage"], items: [
+    { h: ["Carnage","Carnage"], items: [
       ["1.25% per 10% missing health → 1.5%", "1.25% за каждые 10% недостающего здоровья → 1.5%"],
       ["Movement speed when hitting someone below 50%: 7.5% → 10%", "Скорость при ударе по цели ниже 50% HP: 7.5% → 10%"]
     ]},
-    { h: ["Muay Thai and its stances", "Muay Thai и его стойки"], items: [
+    { h: ["Muay Thai and its stances","Muay Thai и его стойки"], items: [
       ["Now deal 20% less damage if you're Muscle", "Теперь наносят на 20% меньше урона, если у вас мышечное телосложение"]
     ]},
-    { h: ["Poise", "Пойз (Poise)"], items: [
+    { h: ["Poise","Пойз (Poise)"], items: [
       ["Added to the poise countdown stop list: Kinjite, Bear Hug, 5 Hit Barrage, Mountain Breaker, Slam Rush, Brutalize, Dress, Flicker Jabs (Wongsawat M2)", "В список остановки отсчёта пойза добавлены: Kinjite, Bear Hug, 5 Hit Barrage, Mountain Breaker, Slam Rush, Brutalize, Dress, Flicker Jabs (M2 Wongsawat)"]
     ]},
-    { h: ["Global hyperarmor cooldown", "Общий кулдаун гиперброни"], items: [
+    { h: ["Global hyperarmor cooldown","Общий кулдаун гиперброни"], items: [
       ["Muscle and Fat: 3s → 5s", "Мышцы и жир: 3 с → 5 с"],
       ["Lean: 3s → 12s", "Худое телосложение: 3 с → 12 с"]
     ]},
-    { h: ["Stat gain buffs", "Баффы прироста статов"], items: [
+    { h: ["Stat gain buffs","Баффы прироста статов"], items: [
       ["Removed: Muscle stamina gain buff, Fat durability gain buff, 0 muscle agility gain buff", "Убраны: бафф прироста стамины у мышц, бафф прироста выносливости у жира, бафф прироста ловкости при 0 мышц"]
     ]},
-    { h: ["Trainings", "Тренировки"], items: [
+    { h: ["Trainings","Тренировки"], items: [
       ["Rope: 0.12 → 0.24 Stamina", "Скакалка (Rope): 0.12 → 0.24 стамины"],
       ["Pullups: 0.24 → 0.48 Stamina", "Подтягивания (Pullups): 0.24 → 0.48 стамины"],
       ["Situp: 0.1 → 0.115 Durability", "Пресс (Situp): 0.1 → 0.115 выносливости"],
@@ -480,17 +420,17 @@ window.PATCHES = [
       ["Weight Twist, weight 3: 0.137 → 0.155 Durability", "Weight Twist, вес 3: 0.137 → 0.155 выносливости"],
       ["Durability Training: 0.0045 → 0.0055 per 1% HP lost; min 0.0006 → capped at 0.00065; max 0.025 → 0.0275", "Тренировка выносливости (Durability Training): 0.0045 → 0.0055 за 1% потерянного HP; минимум 0.0006 → кап 0.00065; максимум 0.025 → 0.0275"]
     ]},
-    { h: ["New trainings rebalance", "Ребаланс новых тренировок"], items: [
+    { h: ["New trainings rebalance","Ребаланс новых тренировок"], items: [
       ["Bicycle Crunch: Durability 0.075 → 0.11, Stamina 0.05 → 0.1", "Bicycle Crunch: выносливость 0.075 → 0.11, стамина 0.05 → 0.1"],
       ["Kettlebell Pistol Squat, no weight: Strength 0.14 → 0.12, Agility 0.11 → 0.1, LM 0.16 → 0.12", "Kettlebell Pistol Squat без веса: сила 0.14 → 0.12, ловкость 0.11 → 0.1, LM 0.16 → 0.12"],
       ["Kettlebell Pistol Squat, weight 1: Strength 0.13 → 0.11, Agility 0.1 → 0.09, LM 0.19 → 0.15", "Kettlebell Pistol Squat, вес 1: сила 0.13 → 0.11, ловкость 0.1 → 0.09, LM 0.19 → 0.15"],
       ["Kettlebell Pistol Squat, weight 2: Strength 0.11 → 0.09, Agility 0.09 → 0.08, LM 0.23 → 0.19", "Kettlebell Pistol Squat, вес 2: сила 0.11 → 0.09, ловкость 0.09 → 0.08, LM 0.23 → 0.19"],
       ["Speedball: Agility 0.025 → 0.125, Battle Sense 0.01 → 0.05, interval 0.15s → 0.45s", "Speedball: ловкость 0.025 → 0.125, Battle Sense 0.01 → 0.05, интервал 0.15 с → 0.45 с"]
     ]},
-    { h: ["Systems", "Системы"], items: [
+    { h: ["Systems","Системы"], items: [
       ["If your Agility is 30% higher than your Strength, it contributes to stamina drain instead, at 75% effectiveness", "Если ловкость на 30% выше силы, расход стамины считается от неё с эффективностью 75%"]
     ]},
-    { h: ["Gun Park rewards", "Награды Gun Park"], items: [
+    { h: ["Gun Park rewards","Награды Gun Park"], items: [
       ["Guaranteed: ₩1,000,000 → ₩1,250,000; 75 → 100 stats", "Гарантированная: ₩1 000 000 → ₩1 250 000; 75 → 100 статов"],
       ["Common: ₩1,000,000 → ₩1,500,000; 25 → 75 RC; 50 → 75 stats", "Обычная: ₩1 000 000 → ₩1 500 000; 25 → 75 RC; 50 → 75 статов"],
       ["Rare: ₩1,250,000 → ₩2,000,000; 50 → 100 RC; 75 → 125 stats", "Редкая: ₩1 250 000 → ₩2 000 000; 50 → 100 RC; 75 → 125 статов"],

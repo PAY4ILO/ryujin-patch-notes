@@ -2,7 +2,7 @@
 import fs from "node:fs";
 const dir = new URL(".", import.meta.url);
 const b = JSON.parse(fs.readFileSync(new URL("board.json", dir)));
-const SKIP_LISTS = new Set(["Old Events"]);
+const SKIP_LISTS = new Set(["Old Events", "General Info"]);
 const lists = b.lists.filter(l => !l.closed && !SKIP_LISTS.has(l.name)).sort((a, c) => a.pos - c.pos);
 const listIds = new Set(lists.map(l => l.id));
 const byId = Object.fromEntries(b.cards.map(c => [c.id, c]));

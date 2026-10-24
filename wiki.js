@@ -20,6 +20,7 @@
       found: n => n ? `Найдено: ${n} ${plural(n, "карточка", "карточки", "карточек")}` : "Ничего не нашлось. Попробуй другое слово.",
       back: "← к результатам",
       related: "Связанные изменения из патчноутов", newer: "новее Trello", allNotes: "все в патчноутах",
+      fixed: "Обновлено по патчноутам (в Trello ещё старое)",
       trello: "Открыть в Trello", updated: "карточка обновлена",
       footer: `Неофициальный перевод открытого Trello Ryujin (выгрузка ${exported}). Если в патчах что-то поменялось позже — смотри блок «Связанные изменения» в карточке.`,
       locale: "ru-RU"
@@ -34,6 +35,7 @@
       found: n => n ? `${n} ${n === 1 ? "card" : "cards"} found` : "Nothing found. Try another word.",
       back: "← back to results",
       related: "Related patch note changes", newer: "newer than Trello", allNotes: "all in patch notes",
+      fixed: "Updated from patch notes (Trello still has the old info)",
       trello: "Open in Trello", updated: "card updated",
       footer: `Unofficial copy of the public Ryujin Trello board (exported ${exported}). If a patch changed something later, check the “Related changes” box on the card.`,
       locale: "en-GB"
@@ -51,10 +53,10 @@
 
   const params = new URLSearchParams(location.search);
   const state = {
-    lang: params.get("lang") || store.get("rpn-lang") || ((navigator.language || "ru").startsWith("en") ? "en" : "ru"),
+    lang: params.get("lang") || store.get("rpn-lang") || "en",
     q: params.get("q") || ""
   };
-  if (!T[state.lang]) state.lang = "ru";
+  if (!T[state.lang]) state.lang = "en";
   const li = () => (state.lang === "ru" ? 1 : 0);
   const input = $("q");
   input.value = state.q;
@@ -186,10 +188,12 @@
       }).join("")}</ul>
       <div class="meta"><a href="./?q=${encodeURIComponent(keys[0])}&lang=${state.lang}">${esc(L.allNotes)} →</a></div></section>` : "";
     const back = state.q.trim() ? `<a href="#" id="toResults">${esc(L.back)}</a> · ` : "";
+    const fixed = c.x ? `<section class="fixbox"><h3>${esc(L.fixed)}</h3><ul>${c.x.map(([en, ru, d]) =>
+      `<li>${esc(state.lang === "ru" ? ru : en)} <span class="when">${esc(new Date(d).toLocaleDateString(L.locale, { day: "numeric", month: "short" }))}</span></li>`).join("")}</ul></section>` : "";
     return `<div class="crumbs">${back}<a href="#">${esc(L.home)}</a> › <a href="#s-${c.l}">${esc(l.n[li()])}</a></div>
       <h2 class="page-title">${esc(c.n[li()])}</h2>
       ${other !== c.n[li()] ? `<p class="alt-name">${esc(other)}</p>` : ""}
-      ${cover}<article class="doc" id="doc">${html}</article>${related}
+      ${fixed}${cover}<article class="doc" id="doc">${html}</article>${related}
       <p class="meta"><a href="https://trello.com/c/${s}" target="_blank" rel="noopener">${esc(L.trello)} ↗</a> · ${esc(L.updated)} ${c.u}</p>`;
   }
 
@@ -268,6 +272,10 @@
     if (e.key === "/" && document.activeElement !== input) { e.preventDefault(); input.focus(); input.select(); }
     else if (e.key === "Escape") { document.body.classList.remove("side-open"); if (document.activeElement === input) { $("clear").click(); input.blur(); } }
   });
+
+  const toTop = document.getElementById("toTop");
+  addEventListener("scroll", () => toTop.classList.toggle("show", scrollY > 600), { passive: true });
+  toTop.onclick = () => scrollTo({ top: 0, behavior: "smooth" });
 
   render();
 })();

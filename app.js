@@ -10,13 +10,11 @@
       fixes: n => plural(n, "исправление", "исправления", "исправлений"), updated: () => "последний пост",
       found: (n, p) => `${n} ${plural(n, "изменение", "изменения", "изменений")} в ${p} ${plural(p, "посте", "постах", "постах")}`,
       newest: "Сначала новые", oldest: "Сначала старые",
-      author: "Автор", anyone: "все",
-      devs: "Разработчики",
       showAll: n => `Показать весь пост (${n})`, showLess: "Только совпадения",
       summary: "Сводка", balanceTag: "Баланс",
       empty: "Ничего не нашлось. Попробуй другое слово или сбрось фильтры.",
-      notice: "По словам Arshy, 25 октября в 01:27 в игру выпущено всё, что было до этого момента. Изменения баланса опубликованы без даты, поэтому стоят последними.",
-      footer: "Неофициальный перевод сообщений разработчиков (twusta, Arshy). Названия скиллов, стилей и предметов оставлены как в игре.",
+      notice: "Здесь только свежие изменения за последние две недели. Старые раз в полмесяца переносятся в вики и отсюда удаляются.",
+      footer: "Неофициальный перевод сообщений разработчиков Ryujin. Названия скиллов, стилей и предметов оставлены как в игре.",
       topics: { index: "Индекс", mobile: "Мобильные", gang: "Банды", boss: "Боссы и NPC", quest: "Квесты", settings: "Настройки", training: "Тренировки", grab: "Захваты", block: "Блок", macro: "Макрос", perf: "Производительность" },
       locale: "ru-RU"
     },
@@ -29,13 +27,11 @@
       posts: () => "posts", changes: () => "changes", fixes: () => "fixes", updated: () => "latest post",
       found: (n, p) => `${n} ${n === 1 ? "change" : "changes"} in ${p} ${p === 1 ? "post" : "posts"}`,
       newest: "Newest first", oldest: "Oldest first",
-      author: "Author", anyone: "everyone",
-      devs: "Developers",
       showAll: n => `Show the whole post (${n})`, showLess: "Matches only",
       summary: "Summary", balanceTag: "Balance",
       empty: "Nothing found. Try another word or clear the filters.",
-      notice: "According to Arshy, everything up to Oct 25, 01:27 has been published to the game. The balance changes were posted without a date, so they are listed last.",
-      footer: "Unofficial collection of the developers' posts (twusta, Arshy). Skill, style and item names are kept as in the game.",
+      notice: "Only the latest two weeks of changes are listed here. Every half month the older ones are folded into the wiki and removed.",
+      footer: "Unofficial collection of the Ryujin developers' posts. Skill, style and item names are kept as in the game.",
       topics: { index: "Index", mobile: "Mobile", gang: "Gangs", boss: "Bosses & NPCs", quest: "Quests", settings: "Settings", training: "Training", grab: "Grabs", block: "Block", macro: "Macro", perf: "Performance" },
       locale: "en-GB"
     }
@@ -54,7 +50,6 @@
     macro: /macro/i,
     perf: /optimis|memory leak|loading|logging/i
   };
-  const AUTHORS = { twusta: "#d93a2b", Arshy: "#3d7bd9" };
 
   const norm = s => s.toLowerCase().replace(/ё/g, "е");
   const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -87,7 +82,7 @@
           en, ru,
           type: typeOf(en, p.kind),
           topics: Object.keys(TOPICS).filter(k => TOPICS[k].test(ctx)),
-          hay: norm(`${en} ${ru} ${s.h ? s.h.join(" ") : ""} ${p.title ? p.title.join(" ") : ""} ${p.a || ""}`)
+          hay: norm(`${en} ${ru} ${s.h ? s.h.join(" ") : ""} ${p.title ? p.title.join(" ") : ""}`)
         };
       })
     }));
@@ -96,15 +91,14 @@
 
   const params = new URLSearchParams(location.search);
   const state = {
-    lang: params.get("lang") || store.get("rpn-lang") || ((navigator.language || "ru").startsWith("en") ? "en" : "ru"),
+    lang: params.get("lang") || store.get("rpn-lang") || "en",
     q: params.get("q") || "",
     type: "all",
     topic: null,
-    author: "all",
     sort: "new",
     open: new Set()
   };
-  if (!T[state.lang]) state.lang = "ru";
+  if (!T[state.lang]) state.lang = "en";
 
   const $ = id => document.getElementById(id);
   const input = $("q");
@@ -159,7 +153,7 @@
     if (skip !== "topic" && state.topic && !it.topics.includes(state.topic)) return false;
     return toks.every(t => it.hay.includes(t));
   }
-  const postVisible = p => p.kind !== "milestone" && (state.author === "all" || p.a === state.author);
+  const postVisible = p => p.kind !== "milestone";
   const filtering = () => state.q.trim() || state.type !== "all" || state.topic;
 
   function fmtDay(p, L) {
@@ -198,7 +192,6 @@
     $("searchBox").classList.toggle("has", !!state.q);
     $("notice").textContent = L.notice;
     $("sortBtn").textContent = state.sort === "new" ? "↓ " + L.newest : "↑ " + L.oldest;
-    $("authorBtn").textContent = `${L.author}: ${state.author === "all" ? L.anyone : state.author}`;
 
     const real = posts.filter(p => p.kind !== "milestone");
     const allItems = real.flatMap(p => p.sections.flatMap(s => s.items));
@@ -218,11 +211,11 @@
 
     for (const p of sorted) {
       if (p.kind === "milestone") {
-        if (isFiltering || (state.author !== "all" && p.a !== state.author)) continue;
+        if (isFiltering) continue;
         const key = p.d.slice(0, 10);
         if (key !== lastKey) { html += `<div class="day"><h2>${fmtDay(p, L)}</h2></div>`; lastKey = key; }
         const it = p.sections[0].items[0];
-        html += `<div class="milestone" id="${p.id}">✓ ${esc(state.lang === "ru" ? it.ru : it.en)} <span class="when">${p.a} · ${p.d.slice(11)}</span></div>`;
+        html += `<div class="milestone" id="${p.id}">✓ ${esc(state.lang === "ru" ? it.ru : it.en)} <span class="when">${p.d.slice(11)}</span></div>`;
         continue;
       }
       if (!postVisible(p)) continue;
@@ -246,15 +239,13 @@
 
       const key = p.approx ? "~" + p.id : p.d.slice(0, 10);
       if (key !== lastKey) { html += `<div class="day"><h2>${esc(fmtDay(p, L))}</h2></div>`; lastKey = key; }
-      const name = p.a || L.devs;
-      const ava = p.a ? `<span class="ava" style="background:${AUTHORS[p.a]}">${p.a[0].toUpperCase()}</span>` : `<span class="ava" style="background:var(--faint)">?</span>`;
       const tag = p.kind === "summary" ? `<span class="tag">${L.summary}</span>` : p.kind === "balance" ? `<span class="tag balance">${L.balanceTag}</span>` : "";
       const title = p.title ? `<h3 class="post-title">${highlight(p.title[state.lang === "ru" ? 1 : 0], toks)}</h3>` : "";
       const note = p.note && (!isFiltering || showAll) ? `<div class="note">${esc(p.note[state.lang === "ru" ? 1 : 0])}</div>` : "";
       const more = isFiltering && matched < p.total
         ? `<div class="more"><button class="linkbtn" data-open="${p.id}">${showAll ? L.showLess : L.showAll(p.total)}</button></div>` : "";
       html += `<article class="post ${p.kind || ""}" id="${p.id}">
-        <div class="post-head">${ava}<span class="who">${esc(name)}</span><span class="when">${p.approx ? "" : p.d.slice(11)}</span>${tag}<a class="anchor" href="#${p.id}">#</a></div>
+        <div class="post-head"><span class="when">${p.approx ? "" : p.d.slice(11)}</span>${tag}<a class="anchor" href="#${p.id}">#</a></div>
         ${title}<div class="post-body">${body}${note}${more}</div></article>`;
     }
     $("list").innerHTML = html || `<div class="empty">${L.empty}</div>`;
@@ -281,10 +272,6 @@
     state.topic = state.topic === b.dataset.topic ? null : b.dataset.topic; render();
   };
   $("sortBtn").onclick = () => { state.sort = state.sort === "new" ? "old" : "new"; render(); };
-  $("authorBtn").onclick = () => {
-    const order = ["all", "twusta", "Arshy"];
-    state.author = order[(order.indexOf(state.author) + 1) % order.length]; render();
-  };
   $("list").onclick = e => {
     const b = e.target.closest("[data-open]"); if (!b) return;
     const id = b.dataset.open;
@@ -295,6 +282,10 @@
     if (e.key === "/" && document.activeElement !== input) { e.preventDefault(); input.focus(); input.select(); }
     else if (e.key === "Escape" && document.activeElement === input) { $("clear").click(); input.blur(); }
   });
+
+  const toTop = document.getElementById("toTop");
+  addEventListener("scroll", () => toTop.classList.toggle("show", scrollY > 600), { passive: true });
+  toTop.onclick = () => scrollTo({ top: 0, behavior: "smooth" });
 
   render();
   if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();

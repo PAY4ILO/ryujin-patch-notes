@@ -1,0 +1,208 @@
+[
+  {
+    "card": "Y3vBnwbu", "date": "2026-08-16",
+    "note": ["Boss reward cooldown is now 45 minutes", "Кулдаун наград с босса теперь 45 минут"],
+    "replace": [[
+      "There is a 30 minute cooldown before you can get rewards from the same boss after defeating them. If you manually spawn a boss with their Essence, then this cooldown is ignored and you can get rewards from them.",
+      "There is a 45 minute cooldown before you can get rewards from the same boss after defeating them. If you manually spawn a boss with their Essence, then this cooldown is ignored and you can get rewards from them.",
+      "После победы над боссом 45 минут нельзя получить награду с того же босса. Если призвать босса вручную через Essence, этот кулдаун не действует."
+    ]]
+  },
+  {
+    "card": "jGvh7ZeW", "date": "2026-10-16",
+    "note": ["The mode bar waits 3 seconds out of combat before dropping", "Шкала режима начинает убывать только через 3 секунды вне боя"],
+    "replace": [[
+      "When you are out of combat your mode bar will go down by 1% every 2 seconds.",
+      "After 3 seconds out of combat your mode bar goes down by 1% every 2 seconds.",
+      "Через 3 секунды вне боя шкала режима начинает падать на 1% каждые 2 секунды."
+    ]]
+  },
+  {
+    "card": "ZItPf008", "date": "2026-10-23",
+    "note": ["Gang war cooldown is 6 hours; new rules for macroing players, holding the base and leaving", "Кулдаун войны банд 6 часов; новые правила про макросящих, удержание базы и выход с сервера"],
+    "replace": [[
+      "Gang Wars: If both gangs have an Officer+ online and 5+ members on each side, every grip has a 5% chance to start a Gang War (grips between Allied+ gangs don't count). There is a 3 hour cooldown after a Gang War before another can start.",
+      "Gang Wars: If both gangs have an Officer+ online and 5+ members on each side, every grip has a 5% chance to start a Gang War (grips between Allied+ gangs don't count). There is a 6 hour cooldown after a Gang War before another can start.",
+      "Война банд: если в обеих бандах онлайн офицер или выше и по 5+ участников с каждой стороны, каждый грип с шансом 5% начинает войну (грипы между союзными и выше бандами не считаются). После войны 6 часов кулдауна до следующей."
+    ]],
+    "append": [
+      "## Recent changes\n\n- Holding the gang base also gives points during a war.\n- Players who have had auto macro on for 20+ minutes give no war points, and killing AFK or macroing players doesn't start a war.\n- If every member of one gang leaves the server, the war ends early and the remaining gang wins.",
+      "## Последние изменения\n\n- Удержание базы банды тоже даёт очки во время войны.\n- Игроки с автомакросом 20+ минут не дают очков, а убийство AFK-игроков или игроков на макросе не начинает войну.\n- Если все участники одной банды вышли с сервера, война заканчивается досрочно — побеждает оставшаяся."
+    ]
+  },
+  {
+    "card": "c9HjOWsA", "date": "2026-08-26",
+    "note": ["World events now start every 1 hour 15 minutes", "Мировые события теперь каждые 1 час 15 минут"],
+    "replace": [[
+      "**World Events** start **every hour**, with the event picked randomly.",
+      "**World Events** start **every 1 hour 15 minutes**, with the event picked randomly. They don't start in the tutorial, private servers or raids.",
+      "**Мировые события** начинаются **каждые 1 час 15 минут**, событие выбирается случайно. В обучении, на приватных серверах и в рейдах их нет."
+    ]]
+  },
+  {
+    "card": "diw0rxPJ", "date": "2026-08-17",
+    "note": ["Per rescued citizen: 10 RC and 5 Agility", "За каждого спасённого: 10 RC и 5 ловкости"],
+    "replace": [
+      ["- 15 RC", "- 10 RC", "- 10 RC"],
+      ["- 1 Agility (affected by softcaps)", "- 5 Agility (affected by softcaps)", "- 5 ловкости (с учётом софткапов)"]
+    ]
+  },
+  {
+    "card": "ihLBhWlE", "date": "2026-10-18",
+    "note": ["Single Leg Takedown breaks ribs instead of the jaw", "Single Leg Takedown ломает рёбра, а не челюсть"],
+    "replace": [[
+      "Single Leg Takedown: Rush forward and grab your target’s leg, then throw them on the ground. 10.2 base damage, .9s stun, 23s miss cooldown, 29s hit cooldown. Increases Jaw breaking count by 1. Can hit ragdolled players.",
+      "Single Leg Takedown: Rush forward and grab your target’s leg, then throw them on the ground. 10.2 base damage, .9s stun, 23s miss cooldown, 29s hit cooldown. Increases Rib breaking count by 1. Can hit ragdolled players.",
+      "Single Leg Takedown: рывок вперёд, захват ноги цели и бросок на землю. 10.2 базового урона, оглушение 0.9 с, кулдаун 23 с при промахе, 29 с при попадании. +1 к счётчику перелома рёбер. Бьёт по игрокам в рэгдолле."
+    ]]
+  },
+  {
+    "card": "aYa8ZucW", "date": "2026-10-25",
+    "note": ["Rotary Shift: 1 leg and 2 arm breaks", "Rotary Shift: перелом 1 ноги и 2 рук"],
+    "replace": [[
+      "Rotary Shift: Grab the attackers leg and shoulder and spin them to the ground. Works as both a grab and counter. 11.4 base damage, 1.1 second stun, .35 second counter window, 26 second cooldown on miss, 31 second cooldown on hit. Increases Leg breaking count by 2. Can hit ragdolled players.",
+      "Rotary Shift: Grab the attackers leg and shoulder and spin them to the ground. Works as both a grab and counter. 11.4 base damage, 1.1 second stun, .35 second counter window, 26 second cooldown on miss, 31 second cooldown on hit. Increases Leg breaking count by 1 and Arm breaking count by 2. Can hit ragdolled players.",
+      "Rotary Shift: хватаете атакующего за ногу и плечо и закручиваете на землю. Работает и как захват, и как контратака. 11.4 базового урона, оглушение 1.1 с, окно контратаки 0.35 с, кулдаун 26 с при промахе, 31 с при попадании. +1 к счётчику перелома ноги и +2 руки. Бьёт по игрокам в рэгдолле."
+    ]]
+  },
+  {
+    "card": "53NRh30U", "date": "2026-10-25",
+    "note": ["Teleport dashes moved from the mode to the Electrified Dashes card", "Телепорт-рывки перенесены из режима в карту Electrified Dashes"],
+    "replace": [[
+      "- Electrified Dashes: Dashes now inflict electrocution for 1.5 seconds, 15 second cooldown on electrocution.",
+      "- Electrified Dashes: Your dashes become teleport dashes (moved here from the mode itself) and inflict electrocution for 1.5 seconds, 15 second cooldown on electrocution.",
+      "- Electrified Dashes: рывки становятся телепорт-рывками (перенесено сюда из самого режима) и накладывают электрошок на 1.5 секунды, кулдаун электрошока 15 с."
+    ]]
+  },
+  {
+    "card": "eO1000gA", "date": "2026-10-25",
+    "note": ["Gun Park rewards now include Won; Z- rank needed to bid on the Red Paper", "В награды Gun Park добавлены воны; для ставки на Red Paper нужен ранг Z-"],
+    "replace": [
+      ["Can be spawned by buying the Red Paper for ₩50,000,000. The person who has contributed the most money will get the Red Paper, allowing them to spawn him in at any time.",
+       "Can be spawned by buying the Red Paper for ₩50,000,000. The person who has contributed the most money will get the Red Paper, allowing them to spawn him in at any time. You must be at least Z- rank to bid.",
+       "Призывается покупкой Red Paper за ₩50,000,000. Red Paper получает тот, кто вложил больше всех денег, и может призвать его в любой момент. Делать ставки можно с ранга Z-."],
+      ["- 175 Ryujin Coins", "- 175 Ryujin Coins\n- ₩5,000,000", "- 175 Ryujin Coins\n- ₩5,000,000"],
+      ["- 100 Ryujin Coins", "- 100 Ryujin Coins\n- ₩2,000,000", "- 100 Ryujin Coins\n- ₩2,000,000"],
+      ["- 75 Ryujin Coins", "- 75 Ryujin Coins\n- ₩1,500,000", "- 75 Ryujin Coins\n- ₩1,500,000"],
+      ["- 50 Ryujin Coins", "- 50 Ryujin Coins\n- ₩1,250,000", "- 50 Ryujin Coins\n- ₩1,250,000"]
+    ]
+  },
+  {
+    "card": "jQoIoajh", "date": "2026-08-21",
+    "note": ["In combat or in a mode, bones heal every 30 seconds", "В бою или в режиме кости заживают раз в 30 секунд"],
+    "append": [
+      "In combat or while a mode is active, a bone loses one break count every **30 seconds** instead of 20.",
+      "В бою или при активном режиме счётчик перелома кости уменьшается раз в **30 секунд**, а не в 20."
+    ]
+  },
+  {
+    "card": "ilbDoTCs", "date": "2026-10-19",
+    "note": ["Sunfire stun refreshes per hit", "Оглушение Sunfire обновляется с каждым ударом"],
+    "replace": [[
+      "Sunfire: Multiple rapid hits. 1.5x8 (12) base damage, .85s stun, 29 second cooldown. Counts as a combo extender.",
+      "Sunfire: Multiple rapid hits. 1.5x8 (12) base damage, .85s stun, 29 second cooldown. Counts as a combo extender. The stun refreshes on every hit and ends shortly after the last one; gives 1 poise on the first hit and 1 on the last.",
+      "Sunfire: серия быстрых ударов. 1.5x8 (12) базового урона, оглушение 0.85 с, кулдаун 29 с. Продлевает комбо. Оглушение обновляется с каждым ударом и заканчивается вскоре после последнего; даёт 1 пойз за первый удар и 1 за последний."
+    ]]
+  },
+  {
+    "card": "k1fwuFz4", "date": "2026-10-17",
+    "note": ["Torchstep costs 80 stamina", "Torchstep стоит 80 стамины"],
+    "replace": [[
+      "Torchstep: Spin around very fast, setting your foot on fire. Gives your attacks a chance to inflict burn, which does 1.5% damage over 3 seconds. Lasts for 30 seconds, 50 second cooldown. 5 second cooldown on applying burn.",
+      "Torchstep: Spin around very fast, setting your foot on fire. Gives your attacks a chance to inflict burn, which does 1.5% damage over 3 seconds. Lasts for 30 seconds, 50 second cooldown. 5 second cooldown on applying burn. Costs 80 stamina.",
+      "Torchstep: очень быстро крутитесь, поджигая ногу. Ваши атаки с шансом поджигают: 1.5% урона за 3 секунды. Длится 30 секунд, кулдаун 50 с. Кулдаун поджога 5 с. Стоит 80 стамины."
+    ]]
+  },
+  {
+    "card": "BlSa5866", "date": "2026-10-17",
+    "note": ["Chi Blockage breaks ribs", "Chi Blockage ломает рёбра"],
+    "replace": [[
+      "Chi Blockage: Hit your target’s meridians, stunning them. Guardbreaks. 6.4 base damage, 1s stun, does a 2nd stun for .5s after 5 seconds, 31s cooldown. Counts as a combo extender.",
+      "Chi Blockage: Hit your target’s meridians, stunning them. Guardbreaks. 6.4 base damage, 1s stun, does a 2nd stun for .5s after 5 seconds, 31s cooldown. Counts as a combo extender. Breaks ribs.",
+      "Chi Blockage: удар по меридианам цели, оглушающий её. Пробивает блок. 6.4 базового урона, оглушение 1 с, через 5 секунд повторное оглушение на 0.5 с, кулдаун 31 с. Продлевает комбо. Ломает рёбра."
+    ]]
+  },
+  {
+    "card": "SSKKkT55", "date": "2026-10-17",
+    "note": ["Musūren breaks the jaw", "Musūren ломает челюсть"],
+    "replace": [[
+      "Musūren: A barrage of attacks, ending with a powerful uppercut. 1.4x8 (11.2) base damage, 1 second stun, 28 second cooldown, counts as a combo extender.",
+      "Musūren: A barrage of attacks, ending with a powerful uppercut. 1.4x8 (11.2) base damage, 1 second stun, 28 second cooldown, counts as a combo extender. Breaks the jaw.",
+      "Musūren: серия ударов с мощным апперкотом в конце. 1.4x8 (11.2) базового урона, оглушение 1 с, кулдаун 28 с, продлевает комбо. Ломает челюсть."
+    ]]
+  },
+  {
+    "card": "ouFXL562", "date": "2026-10-25",
+    "note": ["Hatsumi: M2 comes out 25% faster", "Hatsumi: M2 выходит на 25% быстрее"],
+    "replace": [[
+      "- Hatsumi: Aikido does 12.5% more damage. Counters deal 12.5% more damage and reflect 10% of the damage from the attack (does not stack with Aikido damage). Changes [[aYa8ZucW]] heavy attack to Triple Strikes. Battle Sense gain increased by 30% and all counters have a small Battle Sense scaling added (BS/1000). Stat gain is increased by 10%. Can learn all Aikido skills and Stardrop.",
+      "- Hatsumi: Aikido does 12.5% more damage. Counters deal 12.5% more damage and reflect 10% of the damage from the attack (does not stack with Aikido damage). Changes [[aYa8ZucW]] heavy attack to Triple Strikes. M2 comes out 25% faster. Battle Sense gain increased by 30% and all counters have a small Battle Sense scaling added (BS/1000). Stat gain is increased by 10%. Can learn all Aikido skills and Stardrop.",
+      "- Hatsumi: Aikido наносит на 12.5% больше урона. Контратаки наносят на 12.5% больше урона и отражают 10% урона атаки (не складывается с уроном Aikido). Тяжёлая атака [[aYa8ZucW]] заменяется на Triple Strikes. M2 выходит на 25% быстрее. Прирост Battle Sense +30%, у всех контратак небольшой скейлинг от Battle Sense (BS/1000). Прирост статов +10%. Может выучить все скиллы Aikido и Stardrop."
+    ]]
+  },
+  {
+    "card": "5yagqsub", "date": "2026-09-17",
+    "note": ["Boss Essences need XXX rank", "Для Boss Essence нужен ранг XXX"],
+    "replace": [[
+      "Found in [[TBstkx4O]], Farlyu sells Boss Essences for ₩5,000,000 each.",
+      "Found in [[TBstkx4O]], Farlyu sells Boss Essences for ₩5,000,000 each. You must be XXX rank or higher to buy them.",
+      "Находится в [[TBstkx4O]]; Farlyu продаёт Boss Essence по ₩5,000,000. Покупать можно с ранга XXX."
+    ]]
+  },
+  {
+    "card": "IGpMTHPW", "date": "2026-10-25",
+    "note": ["Added: hyperarmor cooldown, XP boost limit, ragdoll damage reduction", "Добавлено: кулдаун гиперброни, лимит бустов опыта, снижение урона в рэгдолле"],
+    "append": [
+      "**Hyperarmor cooldown**: after hyperarmor is used there is a global hyperarmor cooldown of 5 seconds for Muscle and Fat builds and 12 seconds for Lean builds.\n\n**XP boosts**: only your 3 highest active XP boosts apply at the same time.\n\n**Ragdoll and grounded state**: you take 20% less damage while ragdolled or grounded, and poise doesn't count down while you are grounded.",
+      "**Кулдаун гиперброни**: после срабатывания гиперброни действует общий кулдаун — 5 секунд для мышечных и жирных билдов, 12 секунд для худых.\n\n**Бусты опыта**: одновременно действуют только 3 самых сильных активных буста.\n\n**Рэгдолл и состояние на земле**: в рэгдолле и на земле вы получаете на 20% меньше урона, а на земле пойз не убывает."
+    ]
+  },
+  {
+    "card": "QXEY2Lsw", "date": "2026-10-19",
+    "note": ["Agility can drive stamina drain", "Расход стамины может считаться от ловкости"],
+    "append": [
+      "**Stamina drain**: if your Agility is 30% higher than your Strength, Agility drives your stamina drain instead, at 75% effectiveness.",
+      "**Расход стамины**: если ловкость на 30% выше силы, расход стамины считается от ловкости с эффективностью 75%."
+    ]
+  },
+  {
+    "card": "XHn3ePgr", "date": "2026-10-19",
+    "note": ["New Index tabs from October", "Новые вкладки Индекса за октябрь"],
+    "append": [
+      "**Added in October 2026**: Softcaps tab, Pure-Style Passives, how much damage % you need for boss drops, M1 and M2 stats for every style, Psyche restrictions, real numbers on every Mode page, Clan Skills, a Boss Cards tab, a Locked In page for dual-stat trainings, and guardbreak and bone break info for every skill.",
+      "**Добавлено в октябре 2026**: вкладка софткапов, пассивки чистых стилей, какой % урона нужен для дропа с босса, статы M1 и M2 всех стилей, ограничения Psyche, реальные числа на страницах режимов, клановые скиллы, вкладка карт боссов, страница Locked In для тренировок на два стата, а также пробитие блока и переломы у каждого скилла."
+    ]
+  },
+  {
+    "card": "qi8q9YHg", "date": "2026-10-17",
+    "note": ["New settings", "Новые настройки"],
+    "append": [
+      "## Settings\n\nIn the settings (top left) you can also turn on Disable Lighting Bloom, Disable Depth of Field, Low Detail Mode, Disable Detailed Textures, Hide Player Scars and Disable Mode Camera Cutscene (Settings → Other). The Mobile section sets button size, button opacity and hotbar size (Small, Medium, Large).",
+      "## Настройки\n\nВ настройках (слева сверху) также есть: Disable Lighting Bloom, Disable Depth of Field, Low Detail Mode, Disable Detailed Textures, Hide Player Scars и Disable Mode Camera Cutscene (Настройки → Other). В разделе Mobile настраиваются размер и прозрачность кнопок и размер хотбара (Small, Medium, Large)."
+    ]
+  },
+  {
+    "card": "1uqEC5Th", "date": "2026-10-17",
+    "note": ["Emote syncing", "Синхронизация эмоций"],
+    "append": [
+      "Using the same emote as someone near you syncs your animation and sound with theirs. Spawn animations can be used as emotes too.",
+      "Если рядом кто-то делает ту же эмоцию, анимация и звук синхронизируются. Анимации появления тоже можно использовать как эмоции."
+    ]
+  },
+  {
+    "card": "x0aDAoYe", "date": "2026-10-25",
+    "note": ["Gang name colours above heads", "Цвета названий банд над головой"],
+    "append": [
+      "Gang names above players' heads are coloured: your gang green, allied gangs blue, other gangs red, no gang white.",
+      "Названия банд над головами игроков цветные: своя банда — зелёный, союзные — синий, другие — красный, без банды — белый."
+    ]
+  },
+  {
+    "card": "wrHu2ihL", "date": "2026-10-16",
+    "note": ["Duel rings no longer push players back", "Дуэльные ринги больше не отталкивают"],
+    "append": [
+      "Duel rings no longer push players back.",
+      "Дуэльные ринги больше не отталкивают игроков."
+    ]
+  }
+]
