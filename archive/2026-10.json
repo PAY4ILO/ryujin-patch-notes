@@ -1,0 +1,52 @@
+[
+ {
+  "id": "1015-0721",
+  "d": "2026-10-15 07:21",
+  "sections": [
+   {
+    "h": [
+     "New additions",
+     "Новое"
+    ],
+    "items": [
+     [
+      "Added Pure-Style Passives to the Index",
+      "В Индекс добавлены пассивки чистых стилей (Pure-Style Passives)"
+     ],
+     [
+      "Added to the Index how much damage % you need to deal before getting boss drops",
+      "В Индекс добавлено, какой % урона нужно нанести, чтобы получить дроп с босса"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Fixes",
+     "Исправления"
+    ],
+    "items": [
+     [
+      "Fixed Mountainous Pulse Strike not doing damage when you get hit mid-skill even though you have hyperarmor",
+      "Исправлено: Mountainous Pulse Strike не наносил урон, если вас ударили посреди скилла, хотя была гиперброня"
+     ],
+     [
+      "Fixed the blocking animation sometimes staying if you press block for a very short time",
+      "Исправлено: анимация блока иногда оставалась после очень короткого нажатия блока"
+     ],
+     [
+      "Fixed the 6th skill obtained from Gifted sometimes not activating from its key no matter how many times you press it (it worked with a mouse click)",
+      "Исправлено: 6-й скилл, полученный от Gifted, иногда не срабатывал по клавише, сколько ни жми (кликом мыши работал)"
+     ],
+     [
+      "Fixed Runner's High not being re-activatable",
+      "Исправлено: Runner's High нельзя было активировать повторно"
+     ],
+     [
+      "Fixed trainers attacking you before you even load in",
+      "Исправлено: тренеры атаковали ещё до того, как вы загрузились"
+     ]
+    ]
+   }
+  ]
+ }
+]
