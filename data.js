@@ -4,22 +4,6 @@
 // New posts go anywhere in the list: the page sorts by d.
 window.PATCHES = [
 {
-  id: "1015-1618", d: "2026-10-15 16:18",
-  items: [
-    ["Fixed backwards running on phone", "Исправлен бег задом наперёд на телефоне"],
-    ["Fixed Ohma naked and buggy animations", "Исправлены «голый» Ohma и его кривые анимации"],
-    ["Further fixes for the M1 gliding/skill bug", "Ещё исправления бага со «скольжением» при M1 и скиллах"],
-    ["Fixes for Always-Up-To-Date M2 not registering", "Исправления: M2 у Always-Up-To-Date не засчитывался"]
-  ],
-  note: ["Further fixes and optimisations needed. Everything will be published afterwards.","Нужны ещё исправления и оптимизации, после этого всё выпустят."]
-},
-{
-  id: "1015-1935", d: "2026-10-15 19:35",
-  items: [
-    ["Added a new setting “Hide Player Scars”", "Добавлена настройка «Hide Player Scars» (скрывать шрамы игроков)"]
-  ]
-},
-{
   id: "1016-0621", d: "2026-10-16 06:21",
   items: [
     ["Added a Softcaps tab to the Index", "В Индекс добавлена вкладка софткапов (Softcaps)"],
