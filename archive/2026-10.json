@@ -188,5 +188,89 @@
     "Исправлено: у NPC и манекенов пропадала анимация блока после идеального блока"
    ]
   ]
+ },
+ {
+  "id": "1016-1957",
+  "d": "2026-10-16 19:57",
+  "items": [
+   [
+    "Added a “Disable Mode Camera Cutscene” setting (Settings → Other) that keeps your camera free when you pop mode",
+    "Добавлена настройка «Disable Mode Camera Cutscene» (Настройки → Other): камера остаётся свободной при включении режима"
+   ],
+   [
+    "Added Psyche restrictions to the Psyches Index (max copies and max per group)",
+    "В Индекс Psyche добавлены ограничения (макс. копий и макс. на группу)"
+   ],
+   [
+    "Every Mode page in the Index now shows the real in-game numbers (25 values across 11 modes were wrong, e.g. Trance State is 15% damage)",
+    "Все страницы режимов в Индексе теперь показывают реальные игровые числа (25 значений в 11 режимах были неверны, например Trance State — это 15% урона)"
+   ],
+   [
+    "Fixed Animal Instinct's M2 stats in the Index not matching the game",
+    "Исправлено: статы M2 у Animal Instinct в Индексе не совпадали с игрой"
+   ],
+   [
+    "Fixed Congenital UI's reflex charge buff giving 0.2% instead of 20%",
+    "Исправлено: бафф заряда рефлекса у Congenital UI давал 0.2% вместо 20%"
+   ],
+   [
+    "Fixed Cockroach Tackle still grabbing after getting Redirected or Countered",
+    "Исправлено: Cockroach Tackle всё равно хватал после Redirect или контратаки"
+   ],
+   [
+    "Fixed grabs on knocked down players giving no stun",
+    "Исправлено: захваты сбитых с ног игроков не давали оглушения"
+   ],
+   [
+    "Fixed extra endlag on Meia Lua de Compasso and Caveirinha Zingada",
+    "Убран лишний эндлаг у Meia Lua de Compasso и Caveirinha Zingada"
+   ],
+   [
+    "Reduced the Jiu clan armbar endlag",
+    "Уменьшен эндлаг рычага локтя (armbar) клана Jiu"
+   ],
+   [
+    "Fixed a rare endless running animation after using a skill that moves you forward",
+    "Исправлена редкая бесконечная анимация бега после скилла с рывком вперёд"
+   ],
+   [
+    "Duel rings no longer push players back",
+    "Дуэльные ринги больше не отталкивают игроков"
+   ],
+   [
+    "Fixed right leg tattoos (Flower, Calm Ocean) and right leg scars not showing",
+    "Исправлено: не отображались татуировки (Flower, Calm Ocean) и шрамы на правой ноге"
+   ],
+   [
+    "Fixed the gym subscription timer showing the wrong time left",
+    "Исправлено: таймер абонемента в зал показывал неверное оставшееся время"
+   ],
+   [
+    "Food app list now scrolls further, so Coffee and Banana are easier to buy on mobile",
+    "Список в приложении еды теперь прокручивается дальше: Coffee и Banana проще купить на телефоне"
+   ]
+  ]
+ },
+ {
+  "id": "1016-2019",
+  "d": "2026-10-16 20:19",
+  "items": [
+   [
+    "Fixed Five Hit Barrage ignoring muscle softcaps, so muscle no longer scales its damage without limit",
+    "Исправлено: Five Hit Barrage игнорировал софткапы мышц, теперь мышцы не разгоняют его урон без предела"
+   ],
+   [
+    "Fixed the mode bar sometimes showing partly full when joining a server",
+    "Исправлено: шкала режима иногда была частично заполнена при входе на сервер"
+   ],
+   [
+    "Wrestling and Sumo Index pages now show their muscle and fat HP buffs",
+    "Страницы Wrestling и Sumo в Индексе теперь показывают баффы HP от мышц и жира"
+   ],
+   [
+    "Fixed your own name and gang name showing above you after dying",
+    "Исправлено: после смерти над вами показывались ваш ник и название банды"
+   ]
+  ]
  }
 ]
