@@ -84,5 +84,109 @@
     "Добавлена настройка «Hide Player Scars» (скрывать шрамы игроков)"
    ]
   ]
+ },
+ {
+  "id": "1016-0621",
+  "d": "2026-10-16 06:21",
+  "items": [
+   [
+    "Added a Softcaps tab to the Index",
+    "В Индекс добавлена вкладка софткапов (Softcaps)"
+   ],
+   [
+    "Added a “Hide Player Scars” setting",
+    "Добавлена настройка «Hide Player Scars» (скрывать шрамы игроков)"
+   ],
+   [
+    "Fixed perfect block on mobile",
+    "Исправлен идеальный блок на мобильных"
+   ],
+   [
+    "Fixed the clothes shop breaking during restocks",
+    "Исправлена поломка магазина одежды при пополнении ассортимента"
+   ],
+   [
+    "Fixed buying offsale clothes by ID doing nothing",
+    "Исправлено: покупка снятой с продажи одежды по ID ничего не делала"
+   ],
+   [
+    "Animal Instinct M2 grab can now be perfect blocked",
+    "Захват M2 у Animal Instinct теперь можно поймать идеальным блоком"
+   ],
+   [
+    "Pure/Gifted movement skills now share the global movement cooldown",
+    "Скиллы перемещения Pure/Gifted теперь делят общий кулдаун перемещения"
+   ],
+   [
+    "Fixed Supreme Genes quest not updating after a gene upgrade",
+    "Исправлено: квест Supreme Genes не обновлялся после улучшения гена"
+   ],
+   [
+    "Fixed running resetting your speed while on a mount",
+    "Исправлено: бег сбрасывал скорость верхом на маунте"
+   ],
+   [
+    "Fixed grabs not stunning knocked down players",
+    "Исправлено: захваты не оглушали сбитых с ног игроков"
+   ],
+   [
+    "Fixed being able to M1 during a skill",
+    "Исправлено: можно было бить M1 во время скилла"
+   ],
+   [
+    "Fixed Ryujin Eats food items not being centered",
+    "Исправлено: еда в Ryujin Eats была не по центру"
+   ],
+   [
+    "Fixed the combat log popup clearing before the player loads in",
+    "Исправлено: окно журнала боя очищалось до загрузки игрока"
+   ]
+  ]
+ },
+ {
+  "id": "1016-0705",
+  "d": "2026-10-16 07:05",
+  "items": [
+   [
+    "Thug Crystal (Professional Pickpocket) cooldown is now 5 minutes per player instead of 10 minutes for everyone",
+    "Кулдаун Thug Crystal (Professional Pickpocket) теперь 5 минут на каждого игрока вместо 10 минут на всех"
+   ],
+   [
+    "Added M1 & M2 stats (damage, range, debounce, cooldowns) for every style to the Index",
+    "В Индекс добавлены статы M1 и M2 (урон, дальность, дебаунс, кулдауны) для каждого стиля"
+   ],
+   [
+    "You can now sell Boss Crystals (₩10,000,000) and Gene Unlimiters (₩5,000,000) to the Black Market",
+    "Теперь на Чёрном рынке можно продать Boss Crystal (₩10 000 000) и Gene Unlimiter (₩5 000 000)"
+   ],
+   [
+    "Mode bar now waits 3 seconds out of combat before it starts dropping",
+    "Шкала режима (Mode) теперь начинает убывать только через 3 секунды вне боя"
+   ],
+   [
+    "Players with auto macro on for 20+ minutes no longer give gang war points",
+    "Игроки с автомакросом, включённым 20+ минут, больше не дают очков в войне банд"
+   ],
+   [
+    "Holding districts and the gang base now gives points during gang wars",
+    "Удержание районов и базы банды теперь даёт очки во время войн банд"
+   ],
+   [
+    "Fixed barrage skills (Flurry Kick, Sunfire and more) giving no poise",
+    "Исправлено: скиллы-серии (Flurry Kick, Sunfire и др.) не давали пойз (poise)"
+   ],
+   [
+    "Fixed Sunfire stacking electrocution with other skills",
+    "Исправлено: Sunfire складывал электрошок с другими скиллами"
+   ],
+   [
+    "Fixed Auto Use Skills not activating a skill after selecting a locked one",
+    "Исправлено: Auto Use Skills не активировал скилл после выбора заблокированного"
+   ],
+   [
+    "Fixed the block animation disappearing on NPCs and dummies after a perfect block",
+    "Исправлено: у NPC и манекенов пропадала анимация блока после идеального блока"
+   ]
+  ]
  }
 ]
