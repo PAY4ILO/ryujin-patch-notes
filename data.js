@@ -4,41 +4,6 @@
 // New posts go anywhere in the list: the page sorts by d.
 window.PATCHES = [
 {
-  id: "1017-1842", d: "2026-10-17 18:42",
-  items: [
-    ["Fixed multi-hit skills like Sunfire and Flurry Kick not giving poise on their last hit: they now give 1 poise on the first hit and 1 on the last", "Исправлено: многоударные скиллы вроде Sunfire и Flurry Kick не давали пойз последним ударом; теперь 1 пойз за первый удар и 1 за последний"],
-    ["Fixed Jack of All Trades not boosting grab skills", "Исправлено: Jack of All Trades не усиливал скиллы-захваты"],
-    ["Fixed the Index showing the wrong lean caps for heights", "Исправлено: Индекс показывал неверные капы худобы (lean) для разного роста"],
-    ["Fixed the Bikini Top keeping a mode's skin tone after the mode ends (not following advance nor removal's colors)", "Исправлено: Bikini Top сохранял цвет кожи режима после его окончания (не следовал цветам ни при включении, ни при снятии)"],
-    ["Fixed perfect blocking sometimes keeping you stuck in block after letting go", "Исправлено: после идеального блока иногда залипал блок, даже когда кнопку отпустили"],
-    ["Fixed landing Jiu's Armbar locking you in place", "Исправлено: попадание Armbar у Jiu обездвиживало вас самих"],
-    ["Fixed the name above the health bar not updating when you remove your title", "Исправлено: имя над полоской здоровья не обновлялось после снятия титула"]
-  ]
-},
-{
-  id: "1017-1847", d: "2026-10-17 18:47", kind: "milestone",
-  items: [
-    ["Published", "Выпущено в игру"]
-  ]
-},
-{
-  id: "1017-1931", d: "2026-10-17 19:31",
-  items: [
-    ["Fixed Duel Zone bugs", "Исправлены баги дуэльной зоны"],
-    ["Fixed muscle reflex bugs", "Исправлены баги рефлекса у мышечного телосложения"],
-    ["Fixed the gun being able to go under the map", "Исправлено: пистолет мог провалиться под карту"],
-    ["Fixed dash issues when you enter a server", "Исправлены проблемы с рывком при входе на сервер"],
-    ["Fixed the bus stop giving a heart attack", "Исправлено: остановка автобуса вызывала сердечный приступ"],
-    ["Fixed duel pushback", "Исправлено отталкивание в дуэлях"],
-    ["Achievement fixes", "Исправления достижений"],
-    ["Revamped the gang relations system", "Переработана система отношений банд"],
-    ["Further gang system bug fixes and optimisations", "Ещё исправления и оптимизации системы банд"],
-    ["Removed some unnecessary logging on console", "Убрано лишнее логирование в консоли"],
-    ["A bunch of map and graphics optimisations", "Множество оптимизаций карт и графики"]
-  ],
-  note: ["All changes published.","Все изменения выпущены в игру."]
-},
-{
   id: "1018-0209", d: "2026-10-18 02:09", kind: "summary",
   title: ["New QoLs and More! (summary of recent changes)","Новые удобства и не только! (сводка последних изменений)"],
   sections: [
