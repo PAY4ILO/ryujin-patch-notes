@@ -453,5 +453,144 @@
    "All changes published.",
    "Все изменения выпущены в игру."
   ]
+ },
+ {
+  "id": "1018-0209",
+  "d": "2026-10-18 02:09",
+  "kind": "summary",
+  "title": [
+   "New QoLs and More! (summary of recent changes)",
+   "Новые удобства и не только! (сводка последних изменений)"
+  ],
+  "sections": [
+   {
+    "h": [
+     "Settings",
+     "Настройки"
+    ],
+    "items": [
+     [
+      "Added a Disable Lighting Bloom option",
+      "Добавлена опция отключения свечения (Disable Lighting Bloom)"
+     ],
+     [
+      "Added a Disable Depth of Field option",
+      "Добавлена опция отключения глубины резкости (Disable Depth of Field)"
+     ],
+     [
+      "Added a Low Detail Mode option",
+      "Добавлен режим низкой детализации (Low Detail Mode)"
+     ],
+     [
+      "Added a Disable Detailed Textures option",
+      "Добавлена опция отключения детальных текстур (Disable Detailed Textures)"
+     ],
+     [
+      "Added a Hide Player Scars option",
+      "Добавлена опция скрытия шрамов игроков (Hide Player Scars)"
+     ],
+     [
+      "Added a Disable Mode Camera Cutscene setting (Settings → Other) that keeps your camera free when you pop mode",
+      "Добавлена настройка Disable Mode Camera Cutscene (Настройки → Other): камера остаётся свободной при включении режима"
+     ],
+     [
+      "Added a Mobile section in Settings with mobile button size, button opacity and hotbar size (Small, Medium, Large)",
+      "В настройках появился раздел Mobile: размер и прозрачность кнопок, размер хотбара (Small, Medium, Large)"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Index",
+     "Индекс"
+    ],
+    "items": [
+     [
+      "Added Pure-Style Passives to the Index",
+      "В Индекс добавлены пассивки чистых стилей"
+     ],
+     [
+      "Added how much damage % you need to deal before getting boss drops to the Index",
+      "В Индекс добавлено, какой % урона нужен для дропа с босса"
+     ],
+     [
+      "Added a Softcaps tab to the Index",
+      "В Индекс добавлена вкладка софткапов"
+     ],
+     [
+      "Added M1 & M2 stats (damage, range, debounce, cooldowns) for every style to the Index",
+      "В Индекс добавлены статы M1 и M2 (урон, дальность, дебаунс, кулдауны) для каждого стиля"
+     ],
+     [
+      "Added Psyche restrictions to the Psyches Index (max copies and max per group)",
+      "В Индекс Psyche добавлены ограничения (макс. копий и макс. на группу)"
+     ],
+     [
+      "Every Mode page in the Index now shows the real in-game numbers",
+      "Все страницы режимов в Индексе теперь показывают реальные игровые числа"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "QoL",
+     "Удобство"
+    ],
+    "items": [
+     [
+      "Added Emote Syncing: using the same emote as someone near you syncs your animation and sound with theirs",
+      "Синхронизация эмоций: если рядом кто-то делает ту же эмоцию, анимация и звук синхронизируются"
+     ],
+     [
+      "You can now sell Boss Crystals (₩10,000,000) and Gene Unlimiters (₩5,000,000) to the Black Market",
+      "Теперь на Чёрном рынке можно продать Boss Crystal (₩10 000 000) и Gene Unlimiter (₩5 000 000)"
+     ],
+     [
+      "Mode bar now waits 3 seconds out of combat before it starts dropping",
+      "Шкала режима начинает убывать только через 3 секунды вне боя"
+     ],
+     [
+      "Players with auto macro on for 20+ minutes no longer give gang war points",
+      "Игроки с автомакросом 20+ минут больше не дают очков в войне банд"
+     ],
+     [
+      "Holding districts and the gang base now gives points during gang wars",
+      "Удержание районов и базы банды даёт очки во время войн банд"
+     ],
+     [
+      "Food app list is now in the middle and scrolls further, so Coffee and Banana are easier to buy on mobile",
+      "Список в приложении еды теперь по центру и прокручивается дальше: Coffee и Banana проще купить на телефоне"
+     ],
+     [
+      "Duel rings no longer push players back",
+      "Дуэльные ринги больше не отталкивают игроков"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Boss Card",
+     "Карта босса"
+    ],
+    "items": [
+     [
+      "Thug Crystal (Professional Pickpocket) cooldown is now 5 minutes per player instead of 10 minutes for everyone",
+      "Кулдаун Thug Crystal (Professional Pickpocket) теперь 5 минут на игрока вместо 10 минут на всех"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Gang System",
+     "Система банд"
+    ],
+    "items": [
+     [
+      "Re-added the Gang Relations System (gang allies and enemies)",
+      "Возвращена система отношений банд (союзники и враги)"
+     ]
+    ]
+   }
+  ]
  }
 ]
