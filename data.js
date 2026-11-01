@@ -4,30 +4,6 @@
 // New posts go anywhere in the list: the page sorts by d.
 window.PATCHES = [
 {
-  id: "1017-0532", d: "2026-10-17 05:32",
-  items: [
-    ["Added emote syncing: using the same emote as someone near you syncs your animation and sound with theirs", "Добавлена синхронизация эмоций: если рядом кто-то делает ту же эмоцию, анимация и звук синхронизируются"],
-    ["Added a Mobile section in Settings with mobile button size, button opacity and hotbar size (Small, Medium, Large)", "В настройках появился раздел Mobile: размер и прозрачность кнопок, размер хотбара (Small, Medium, Large)"],
-    ["Fixed the mobile lock button sometimes not locking the screen", "Исправлено: кнопка блокировки экрана на мобильных иногда не срабатывала"],
-    ["Disable Mode Camera Cutscene now also removes the black bars and screen effects, and keeps your HUD and chat visible", "Disable Mode Camera Cutscene теперь также убирает чёрные полосы и экранные эффекты, а HUD и чат остаются видимыми"],
-    ["Fixed Strengthened Muscles (Congenital Ultra Instinct card) giving damage reduction instead of muscle scaling", "Исправлено: Strengthened Muscles (карта Congenital Ultra Instinct) давала снижение урона вместо скейлинга от мышц"],
-    ["Fixed Chi Blockage not breaking ribs", "Исправлено: Chi Blockage не ломал рёбра"],
-    ["Fixed Torchstep costing 30 stamina instead of 80", "Исправлено: Torchstep стоил 30 стамины вместо 80"],
-    ["Shoulder Throw now breaks ribs instead of arms", "Shoulder Throw теперь ломает рёбра, а не руки"],
-    ["Thunder Clap, Swing and Three Piece Breaker now apply all of their bone breaks, and Musūren now breaks the jaw", "Thunder Clap, Swing и Three Piece Breaker теперь наносят все свои переломы, а Musūren ломает челюсть"],
-    ["Amateur Armbar now has less endlag on hit and a bit more on miss", "У Amateur Armbar меньше эндлага при попадании и немного больше при промахе"],
-    ["Fixed Ssamu Taekkyeon's 3rd M1 not slowing you like normal Taekkyeon", "Исправлено: 3-й M1 у Ssamu Taekkyeon не замедлял, как у обычного Taekkyeon"],
-    ["Fixed trainer spars sometimes not teleporting you to the arena and still giving mastery", "Исправлено: спарринги с тренером иногда не телепортировали на арену, но всё равно давали мастерство"],
-    ["Fixed Edward Wu attacking during his intro cutscene", "Исправлено: Edward Wu атаковал во время своей вступительной катсцены"],
-    ["Updated the Index for 33 skills: hit counts, hyperarmor, bleed and burn, stamina drain, self damage, and separate ragdoll, ground, wall and counter damage", "Обновлён Индекс 33 скиллов: число ударов, гиперброня, кровотечение и горение, расход стамины, урон по себе и отдельный урон в рэгдолле, на земле, о стену и от контратаки"],
-    ["Fixed the Fat Index saying fat gives up to +80% damage (it's +60%)", "Исправлено: в Индексе жира было написано, что жир даёт до +80% урона (на деле +60%)"],
-    ["Fixed the Softcaps Index muscle numbers not matching the stat check", "Исправлено: числа мышц в Индексе софткапов не совпадали с проверкой статов"],
-    ["Fixed the Judo and Muay Thai Pure Style Passive text in the Index", "Исправлен текст пассивок чистого стиля Judo и Muay Thai в Индексе"],
-    ["Added the list of psyches you can only have 1 of to the Psyches Index", "В Индекс Psyche добавлен список Psyche, которые можно иметь только в одном экземпляре"],
-    ["Wrestling and Sumo HP buffs now have their own page in the Styles Index", "Баффы HP у Wrestling и Sumo вынесены на отдельную страницу Индекса стилей"]
-  ]
-},
-{
   id: "1017-1842", d: "2026-10-17 18:42",
   items: [
     ["Fixed multi-hit skills like Sunfire and Flurry Kick not giving poise on their last hit: they now give 1 poise on the first hit and 1 on the last", "Исправлено: многоударные скиллы вроде Sunfire и Flurry Kick не давали пойз последним ударом; теперь 1 пойз за первый удар и 1 за последний"],
