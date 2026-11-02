@@ -4,33 +4,6 @@
 // New posts go anywhere in the list: the page sorts by d.
 window.PATCHES = [
 {
-  id: "1018-2140", d: "2026-10-18 21:40",
-  items: [
-    ["Fixed Professional Pickpocket's bank cut disappearing instead of going into the robber's bank, and victims losing it twice", "Исправлено: доля из банка от Professional Pickpocket пропадала вместо того, чтобы идти в банк грабителя, а жертвы теряли её дважды"],
-    ["Fixed being unable to perfect block on mobile by swiping off the Block button", "Исправлено: на мобильных нельзя было сделать идеальный блок, смахнув палец с кнопки Block"],
-    ["Fixed gang base beds not lowering fatigue", "Исправлено: кровати на базе банды не снижали усталость"],
-    ["Changed the Clean Injuries pad in private arenas to also clear fatigue", "Площадка Clean Injuries на приватных аренах теперь снимает и усталость"],
-    ["Added gang wars ending early when every member of one gang leaves the server, with the remaining gang winning", "Война банд теперь заканчивается досрочно, если все участники одной банды вышли с сервера: побеждает оставшаяся"]
-  ]
-},
-{
-  id: "1019-0016", d: "2026-10-19 00:16",
-  items: [
-    ["Fixed Sunfire's stun stacking up to around 2 seconds: it now refreshes per hit and ends shortly after the last one", "Исправлено: оглушение Sunfire копилось примерно до 2 секунд; теперь обновляется с каждым ударом и заканчивается вскоре после последнего"],
-    ["Fixed using Flashstep while selecting a skill or mount sometimes leaving you holding both", "Исправлено: Flashstep во время выбора скилла или маунта иногда оставлял в руках оба"],
-    ["Fixed the Grinder psyche not lowering quest board mission cooldowns like Thug Leader and Capo", "Исправлено: Psyche Grinder не снижал кулдауны миссий с доски заданий, как Thug Leader и Capo"],
-    ["Fixed private server arenas not loading or teleporting you in on your first join", "Исправлено: арены приватных серверов не загружались и не телепортировали при первом входе"],
-    ["Fixed Ultra Instinct not keeping your eyes black when healing above 50% HP with Scarred Beast", "Исправлено: Ultra Instinct не сохранял чёрные глаза при лечении выше 50% HP со Scarred Beast"]
-  ]
-},
-{
-  id: "1019-0222", d: "2026-10-19 02:22",
-  items: [
-    ["Updated models for Heaven Fang Book, Demonsbane Scroll, Guihun Manual, Fa Jin Scroll", "Обновлены модели Heaven Fang Book, Demonsbane Scroll, Guihun Manual, Fa Jin Scroll"],
-    ["Renamed Heaven Fang Book → Heaven Fang Scroll", "Heaven Fang Book переименован → Heaven Fang Scroll"]
-  ]
-},
-{
   id: "1019-0441", d: "2026-10-19 04:41",
   items: [
     ["Fixed the Index saying Suibian only scales with Fat if you're fat: it always scales with Fat / 300", "Исправлено: Индекс писал, что Suibian скейлится от жира, только если вы толстый; на деле всегда Fat / 300"],
