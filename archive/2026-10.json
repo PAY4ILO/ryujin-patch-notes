@@ -744,5 +744,55 @@
     "Исправлено: в Индексе у Nuclear Kick не было сказано, что он пробивает блок"
    ]
   ]
+ },
+ {
+  "id": "1019-2239",
+  "d": "2026-10-19 22:39",
+  "items": [
+   [
+    "Fixed the Index not showing guardbreak for God Glow, Blast Core, Whale Burial, Body Slam, Thirteen-Fold Kill, Burmese Iron Hammer, Darkness Blow, Three-Level Attack, Inferno Nirvana Kick, Flicker Jabs, Pummel, Shoulder Bash, Helicóptero and Ironbreaker",
+    "Исправлено: Индекс не показывал пробитие блока у God Glow, Blast Core, Whale Burial, Body Slam, Thirteen-Fold Kill, Burmese Iron Hammer, Darkness Blow, Three-Level Attack, Inferno Nirvana Kick, Flicker Jabs, Pummel, Shoulder Bash, Helicóptero и Ironbreaker"
+   ],
+   [
+    "Added Inferno Nirvana Kick's burn duration to the Index",
+    "В Индекс добавлена длительность горения от Inferno Nirvana Kick"
+   ],
+   [
+    "Changed stamina drain: if your Agility is 30% higher than your Strength, Agility now drives stamina drain at 75% effectiveness",
+    "Изменён расход стамины: если ловкость на 30% выше силы, расход считается от ловкости с эффективностью 75%"
+   ],
+   [
+    "Fixed Wongsawat Thai Prodigy pure skills working without Boxing or Muay Thai style",
+    "Исправлено: чистые скиллы Wongsawat Thai Prodigy работали без стиля Boxing или Muay Thai"
+   ],
+   [
+    "Fixed grabs missing when the target is standing inside you (Tiger Jaws, Bear Hug, Slam Grab, Dress, Bite, Knee Strike, Rice Bag Smash, Mountain Breaker, Thunder Clap, Fa Jin, Rotary Shift, Modified Sleeve Wheel Choke, Power Bomb, Suplex, Tenkuu-Otoshi)",
+    "Исправлено: захваты промахивались, если цель стоит вплотную «внутри» вас (Tiger Jaws, Bear Hug, Slam Grab, Dress, Bite, Knee Strike, Rice Bag Smash, Mountain Breaker, Thunder Clap, Fa Jin, Rotary Shift, Modified Sleeve Wheel Choke, Power Bomb, Suplex, Tenkuu-Otoshi)"
+   ],
+   [
+    "Fixed Apex Animal ignoring the hyperarmor cooldown",
+    "Исправлено: Apex Animal игнорировал кулдаун гиперброни"
+   ],
+   [
+    "Fixed Primal Instincts using a 3s hyperarmor cooldown instead of the body type cooldown (12s Lean, 5s Muscle/Fat)",
+    "Исправлено: у Primal Instincts кулдаун гиперброни был 3 с вместо кулдауна телосложения (12 с худой, 5 с мышцы/жир)"
+   ],
+   [
+    "Fixed Final Form damage and reflex boosts not applying in Ultra Instinct",
+    "Исправлено: бонусы урона и рефлекса Final Form не работали в Ultra Instinct"
+   ],
+   [
+    "Fixed quests like Perfected Genes and Yamazaki disappearing after rejoining",
+    "Исправлено: квесты вроде Perfected Genes и Yamazaki пропадали после перезахода"
+   ],
+   [
+    "Fixed daily quests resetting twice when joining",
+    "Исправлено: ежедневные квесты сбрасывались дважды при входе"
+   ],
+   [
+    "Fixed old daily quests piling up and never clearing",
+    "Исправлено: старые ежедневные квесты копились и не удалялись"
+   ]
+  ]
  }
 ]
