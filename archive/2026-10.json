@@ -718,5 +718,31 @@
     "Heaven Fang Book переименован → Heaven Fang Scroll"
    ]
   ]
+ },
+ {
+  "id": "1019-0441",
+  "d": "2026-10-19 04:41",
+  "items": [
+   [
+    "Fixed the Index saying Suibian only scales with Fat if you're fat: it always scales with Fat / 300",
+    "Исправлено: Индекс писал, что Suibian скейлится от жира, только если вы толстый; на деле всегда Fat / 300"
+   ],
+   [
+    "Fixed Final Form not boosting Ultra Instinct's battle sense scaling",
+    "Исправлено: Final Form не усиливал скейлинг Ultra Instinct от Battle Sense"
+   ],
+   [
+    "Fixed Darkness Blow showing as ready on the hotbar before you land a critical hit",
+    "Исправлено: Darkness Blow показывался готовым на хотбаре до того, как вы нанесли крит"
+   ],
+   [
+    "Fixed Tiger Jaw missing targets standing right inside you",
+    "Исправлено: Tiger Jaw промахивался по целям, стоящим вплотную «внутри» вас"
+   ],
+   [
+    "Fixed Nuclear Kick's Index entry not mentioning that it guardbreaks",
+    "Исправлено: в Индексе у Nuclear Kick не было сказано, что он пробивает блок"
+   ]
+  ]
  }
 ]

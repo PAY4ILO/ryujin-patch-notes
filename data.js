@@ -4,16 +4,6 @@
 // New posts go anywhere in the list: the page sorts by d.
 window.PATCHES = [
 {
-  id: "1019-0441", d: "2026-10-19 04:41",
-  items: [
-    ["Fixed the Index saying Suibian only scales with Fat if you're fat: it always scales with Fat / 300", "Исправлено: Индекс писал, что Suibian скейлится от жира, только если вы толстый; на деле всегда Fat / 300"],
-    ["Fixed Final Form not boosting Ultra Instinct's battle sense scaling", "Исправлено: Final Form не усиливал скейлинг Ultra Instinct от Battle Sense"],
-    ["Fixed Darkness Blow showing as ready on the hotbar before you land a critical hit", "Исправлено: Darkness Blow показывался готовым на хотбаре до того, как вы нанесли крит"],
-    ["Fixed Tiger Jaw missing targets standing right inside you", "Исправлено: Tiger Jaw промахивался по целям, стоящим вплотную «внутри» вас"],
-    ["Fixed Nuclear Kick's Index entry not mentioning that it guardbreaks", "Исправлено: в Индексе у Nuclear Kick не было сказано, что он пробивает блок"]
-  ]
-},
-{
   id: "1019-2239", d: "2026-10-19 22:39",
   items: [
     ["Fixed the Index not showing guardbreak for God Glow, Blast Core, Whale Burial, Body Slam, Thirteen-Fold Kill, Burmese Iron Hammer, Darkness Blow, Three-Level Attack, Inferno Nirvana Kick, Flicker Jabs, Pummel, Shoulder Bash, Helicóptero and Ironbreaker", "Исправлено: Индекс не показывал пробитие блока у God Glow, Blast Core, Whale Burial, Body Slam, Thirteen-Fold Kill, Burmese Iron Hammer, Darkness Blow, Three-Level Attack, Inferno Nirvana Kick, Flicker Jabs, Pummel, Shoulder Bash, Helicóptero и Ironbreaker"],
