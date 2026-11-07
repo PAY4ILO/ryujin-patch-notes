@@ -794,5 +794,87 @@
     "Исправлено: старые ежедневные квесты копились и не удалялись"
    ]
   ]
+ },
+ {
+  "id": "1023-0058",
+  "d": "2026-10-23 00:58",
+  "items": [
+   [
+    "Fixed dash M1s not going the full dash distance",
+    "Исправлено: M1 в рывке не проходили всю дистанцию рывка"
+   ],
+   [
+    "Fixed holding M1 stopping your second dash",
+    "Исправлено: зажатый M1 обрывал второй рывок"
+   ],
+   [
+    "Fixed M2s voiding",
+    "Исправлены войды M2 (удар срывался впустую)"
+   ],
+   [
+    "Changed M2 endlag: recovery ends shortly after the hit for every build",
+    "Изменён эндлаг M2: восстановление заканчивается вскоре после удара для любого билда"
+   ],
+   [
+    "Fixed long M1 auto run endlag on Sumo, Ancient Sumo, Wrestling, Puroresu, Taekkyeon and Ssamsu",
+    "Исправлен долгий эндлаг M1 при автобеге у Sumo, Ancient Sumo, Wrestling, Puroresu, Taekkyeon и Ssamsu"
+   ],
+   [
+    "Fixed extra endlag on about 60 skills",
+    "Убран лишний эндлаг примерно у 60 скиллов"
+   ],
+   [
+    "Fixed skills not casting while holding block",
+    "Исправлено: скиллы не применялись с зажатым блоком"
+   ],
+   [
+    "Fixed mode buffs staying after the mode ends",
+    "Исправлено: баффы режима оставались после его окончания"
+   ],
+   [
+    "Fixed 4'11 players falling under the map from Skull Splitter and similar grabs",
+    "Исправлено: игроки ростом 4'11 проваливались под карту от Skull Splitter и похожих захватов"
+   ],
+   [
+    "Fixed Stomp hitbox not spawning on some floors",
+    "Исправлено: хитбокс Stomp не появлялся на некоторых полах"
+   ],
+   [
+    "Fixes for Gazelle Punch and Explosive Gazelle Punch hitbox",
+    "Исправления хитбокса Gazelle Punch и Explosive Gazelle Punch"
+   ],
+   [
+    "Fixes for Capoeira endlag",
+    "Исправления эндлага Capoeira"
+   ],
+   [
+    "Fixed Rotary Shift voiding both players",
+    "Исправлено: Rotary Shift войдил обоих игроков"
+   ],
+   [
+    "Fixed Toxin Purging breaking your character while gripping",
+    "Исправлено: Toxin Purging ломал персонажа во время грипа"
+   ],
+   [
+    "Fixed Edward Wu, Raian, Niko, Pickle, Rei and Gun attacking before their cutscene ends",
+    "Исправлено: Edward Wu, Raian, Niko, Pickle, Rei и Gun атаковали до конца своей катсцены"
+   ],
+   [
+    "Fixes for Pickle",
+    "Исправления для Pickle"
+   ],
+   [
+    "Fixed summoned bosses sharing the natural boss reward cooldown",
+    "Исправлено: призванные боссы делили кулдаун наград с обычными боссами"
+   ],
+   [
+    "Fixed Raian Kure NPC not talking to you again",
+    "Исправлено: NPC Raian Kure не заговаривал с вами повторно"
+   ],
+   [
+    "Fixed the phone raid cooldown timer looping and showing the wrong time",
+    "Исправлено: таймер кулдауна рейда в телефоне зацикливался и показывал неверное время"
+   ]
+  ]
  }
 ]
