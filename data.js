@@ -4,37 +4,6 @@
 // New posts go anywhere in the list: the page sorts by d.
 window.PATCHES = [
 {
-  id: "1023-later", d: "2026-10-23 12:00",
-  approx: ["Oct 23–24","23–24 октября"],
-  items: [
-    ["Fixed allied district payouts ignoring money psyches", "Исправлено: выплаты с союзных районов игнорировали денежные Psyche"],
-    ["Fixed gang renames pulling members out of their new gang", "Исправлено: переименование банды выдёргивало участников из их новой банды"],
-    ["Fixed gang infamy going below 0", "Исправлено: дурная слава (infamy) банды уходила ниже 0"],
-    ["Fixed killing AFK or macroing players starting gang wars and giving war points", "Исправлено: убийство AFK-игроков или игроков на макросе начинало войну банд и давало очки войны"],
-    ["Changed gang war territory points", "Изменены очки за территорию в войне банд"],
-    ["Optimised cross-server gang updates", "Оптимизированы межсерверные обновления банд"],
-    ["Fixed perfect block on mobile", "Исправлен идеальный блок на мобильных"],
-    ["Fixed the Kettlebell pushing you through the map", "Исправлено: Kettlebell проталкивал сквозь карту"],
-    ["Fixed players on the Kettlebell being impossible to grab", "Исправлено: игроков на Kettlebell нельзя было схватить"],
-    ["Fixed PvP events breaking your tools and auto macro while macroing", "Исправлено: PvP-ивенты ломали инструменты и автомакрос во время макроса"],
-    ["Fixed some physics accessories not moving", "Исправлено: некоторые аксессуары с физикой не двигались"],
-    ["Fixed Otakemaru, Grim Scythe and Heavenly Demon Blade aura floating off on rerolled positions", "Исправлено: аура Otakemaru, Grim Scythe и Heavenly Demon Blade отлетала при перероллнутых позициях"],
-    ["Fixed Otakemaru and other angled back accessories bending on wider bodies", "Исправлено: Otakemaru и другие наклонные аксессуары на спине гнулись на широких телах"],
-    ["Fixed the Disable Accessories Physics setting", "Исправлена настройка Disable Accessories Physics"],
-    ["Fixed Disable Rain only working on the next rain", "Исправлено: Disable Rain срабатывал только со следующего дождя"],
-    ["Fixed the infinite rejoin loop and raids not loading", "Исправлены бесконечный цикл перезахода и незагружающиеся рейды"],
-    ["Fixed some characters never loading or loading without their appearance", "Исправлено: некоторые персонажи не загружались или загружались без внешности"],
-    ["Fixed auto macro rejoins not saving progress", "Исправлено: перезаходы автомакроса не сохраняли прогресс"],
-    ["Changed updates and restarts to teleport you to a fresh server instead of kicking you", "Обновления и перезапуски теперь переносят на свежий сервер вместо кика"],
-    ["Fixed old servers never restarting", "Исправлено: старые серверы никогда не перезапускались"],
-    ["Fixed the Discord merchant and accessory shop bots", "Исправлены Discord-боты торговца и магазина аксессуаров"],
-    ["Fixed respawn memory leaks", "Исправлены утечки памяти при возрождении"],
-    ["Optimised the main game map loading", "Оптимизирована загрузка основной карты"],
-    ["Optimised rain", "Оптимизирован дождь"],
-    ["Optimised accessory physics", "Оптимизирована физика аксессуаров"]
-  ]
-},
-{
   id: "1024-1915", d: "2026-10-24 19:15",
   items: [
     ["Fixed PB / Lean Reflex", "Исправлены PB / Lean Reflex"],
