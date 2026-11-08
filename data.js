@@ -4,18 +4,6 @@
 // New posts go anywhere in the list: the page sorts by d.
 window.PATCHES = [
 {
-  id: "1024-1915", d: "2026-10-24 19:15",
-  items: [
-    ["Fixed PB / Lean Reflex", "Исправлены PB / Lean Reflex"],
-    ["Fixed Guihun randomly gaining damage", "Исправлено: Guihun случайно набирал урон"],
-    ["Fixed boss M1s", "Исправлены M1 боссов"],
-    ["Fixed being able to PB bosses in the middle of their M1s", "Исправлено: боссов можно было ловить идеальным блоком (PB) посреди их M1"],
-    ["Fixed bosses moonwalking", "Исправлено: боссы ходили лунной походкой"],
-    ["Fixed bosses and open world NPCs having no grounded animation", "Исправлено: у боссов и NPC открытого мира не было анимации лежания на земле"],
-    ["Fixed NPC dialogues getting stuck", "Исправлено: диалоги NPC зависали"]
-  ]
-},
-{
   id: "1025-0100", d: "2026-10-25 01:00",
   items: [
     ["Added gang name colours above players' heads: same gang (green), allied gangs (blue), other gangs (red), no gang (white)", "Цвет названия банды над головой: своя банда — зелёный, союзные — синий, другие — красный, без банды — белый"],
