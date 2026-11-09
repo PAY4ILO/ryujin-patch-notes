@@ -1020,5 +1020,381 @@
     "Исправлено: диалоги NPC зависали"
    ]
   ]
+ },
+ {
+  "id": "1025-0100",
+  "d": "2026-10-25 01:00",
+  "items": [
+   [
+    "Added gang name colours above players' heads: same gang (green), allied gangs (blue), other gangs (red), no gang (white)",
+    "Цвет названия банды над головой: своя банда — зелёный, союзные — синий, другие — красный, без банды — белый"
+   ],
+   [
+    "Fixed bounty and fame colours not showing on the leaderboard on join",
+    "Исправлено: цвета награды (bounty) и славы не отображались в таблице лидеров при входе"
+   ],
+   [
+    "Fixes for gang relations",
+    "Исправления отношений банд"
+   ]
+  ]
+ },
+ {
+  "id": "1025-0127",
+  "d": "2026-10-25 01:27",
+  "kind": "milestone",
+  "items": [
+   [
+    "Published all the changes so far",
+    "Выпущены все изменения на данный момент"
+   ]
+  ]
+ },
+ {
+  "id": "balance-1025",
+  "d": "2026-10-25 01:30",
+  "kind": "balance",
+  "approx": [
+   "Undated (latest)",
+   "Без даты (последнее)"
+  ],
+  "title": [
+   "Balance changes",
+   "Изменения баланса"
+  ],
+  "sections": [
+   {
+    "h": [
+     "Softcaps",
+     "Софткапы"
+    ],
+    "items": [
+     [
+      "Durability 32000 softcap: 10% → 15%",
+      "Софткап выносливости (Durability) на 32000: 10% → 15%"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Tokita",
+     "Tokita"
+    ],
+    "items": [
+     [
+      "Flame Kata: Agility/160 → Agility/155",
+      "Flame Kata: Agility/160 → Agility/155"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Aikido",
+     "Aikido"
+    ],
+    "items": [
+     [
+      "Skyward Throw: success CD 40s → 35s; base damage 13 → 12.2; now also deals 2% max health damage; 1 arm break → 2 arm breaks",
+      "Skyward Throw: кулдаун при успехе 40 с → 35 с; базовый урон 13 → 12.2; теперь также наносит 2% от макс. здоровья; 1 перелом руки → 2 перелома рук"
+     ],
+     [
+      "Rotary Shift: 1 leg break → 1 leg + 2 arm breaks",
+      "Rotary Shift: 1 перелом ноги → 1 ноги + 2 рук"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Low Stance (Aikido)",
+     "Low Stance (Aikido)"
+    ],
+    "items": [
+     [
+      "Strength/160 → Strength/130",
+      "Strength/160 → Strength/130"
+     ],
+     [
+      "Agility/200 → Agility/185",
+      "Agility/200 → Agility/185"
+     ],
+     [
+      "UM/333 → UM/450 (1350)",
+      "UM/333 → UM/450 (1350)"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Hatsumi",
+     "Hatsumi"
+    ],
+    "items": [
+     [
+      "M2 comes out 25% faster",
+      "M2 выходит на 25% быстрее"
+     ],
+     [
+      "15% counter damage buff → 12.5% Aikido and counter damage buff (Aikido counters don't get this buff twice)",
+      "Бафф урона контратак 15% → 12.5% к урону Aikido и контратак (контратаки Aikido не получают его дважды)"
+     ],
+     [
+      "Counters' added BS scaling: bs/2000 → bs/1000",
+      "Добавочный скейлинг контратак от BS: bs/2000 → bs/1000"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Lightning God",
+     "Lightning God"
+    ],
+    "items": [
+     [
+      "Teleport dashes removed and moved to the “Electrified Dashes” card; instead your dashes now go 15% further",
+      "Телепорт-рывки убраны и перенесены в карту «Electrified Dashes»; вместо этого рывки теперь на 15% дальше"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Guihun",
+     "Guihun"
+    ],
+    "items": [
+     [
+      "Overclocked: Guihun % increase 15% → 10%, duration 25% → 33% shorter",
+      "Overclocked: прирост Guihun % 15% → 10%, длительность короче на 25% → на 33%"
+     ],
+     [
+      "Each 1% increases muscle by 1% → 0.75%",
+      "Каждый 1% увеличивает мышцы на 1% → 0.75%"
+     ],
+     [
+      "Each 1% increases the damage buff by 1% → 0.75%",
+      "Каждый 1% увеличивает бафф урона на 1% → 0.75%"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Final Form",
+     "Final Form"
+    ],
+    "items": [
+     [
+      "Price reduced to 1250",
+      "Цена снижена до 1250"
+     ],
+     [
+      "10% mode bar gain removed",
+      "Убран прирост шкалы режима на 10%"
+     ],
+     [
+      "Health and damage debuff 5% → 7.5%",
+      "Дебафф здоровья и урона 5% → 7.5%"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Professional Pickpocket",
+     "Professional Pickpocket"
+    ],
+    "items": [
+     [
+      "Cooldown 5 minutes per player → 15 minutes",
+      "Кулдаун 5 минут на игрока → 15 минут"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Carnage",
+     "Carnage"
+    ],
+    "items": [
+     [
+      "1.25% per 10% missing health → 1.5%",
+      "1.25% за каждые 10% недостающего здоровья → 1.5%"
+     ],
+     [
+      "Movement speed when hitting someone below 50%: 7.5% → 10%",
+      "Скорость при ударе по цели ниже 50% HP: 7.5% → 10%"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Muay Thai and its stances",
+     "Muay Thai и его стойки"
+    ],
+    "items": [
+     [
+      "Now deal 20% less damage if you're Muscle",
+      "Теперь наносят на 20% меньше урона, если у вас мышечное телосложение"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Poise",
+     "Пойз (Poise)"
+    ],
+    "items": [
+     [
+      "Added to the poise countdown stop list: Kinjite, Bear Hug, 5 Hit Barrage, Mountain Breaker, Slam Rush, Brutalize, Dress, Flicker Jabs (Wongsawat M2)",
+      "В список остановки отсчёта пойза добавлены: Kinjite, Bear Hug, 5 Hit Barrage, Mountain Breaker, Slam Rush, Brutalize, Dress, Flicker Jabs (M2 Wongsawat)"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Global hyperarmor cooldown",
+     "Общий кулдаун гиперброни"
+    ],
+    "items": [
+     [
+      "Muscle and Fat: 3s → 5s",
+      "Мышцы и жир: 3 с → 5 с"
+     ],
+     [
+      "Lean: 3s → 12s",
+      "Худое телосложение: 3 с → 12 с"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Stat gain buffs",
+     "Баффы прироста статов"
+    ],
+    "items": [
+     [
+      "Removed: Muscle stamina gain buff, Fat durability gain buff, 0 muscle agility gain buff",
+      "Убраны: бафф прироста стамины у мышц, бафф прироста выносливости у жира, бафф прироста ловкости при 0 мышц"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Trainings",
+     "Тренировки"
+    ],
+    "items": [
+     [
+      "Rope: 0.12 → 0.24 Stamina",
+      "Скакалка (Rope): 0.12 → 0.24 стамины"
+     ],
+     [
+      "Pullups: 0.24 → 0.48 Stamina",
+      "Подтягивания (Pullups): 0.24 → 0.48 стамины"
+     ],
+     [
+      "Situp: 0.1 → 0.115 Durability",
+      "Пресс (Situp): 0.1 → 0.115 выносливости"
+     ],
+     [
+      "Roadwork Long: 6.4 → 12.8 Stamina",
+      "Длинная пробежка (Roadwork Long): 6.4 → 12.8 стамины"
+     ],
+     [
+      "Roadwork Short: 3 → 6 Stamina",
+      "Короткая пробежка (Roadwork Short): 3 → 6 стамины"
+     ],
+     [
+      "Treadmill with Breathing Mask: 0.06 → 0.12 Stamina",
+      "Беговая дорожка с дыхательной маской: 0.06 → 0.12 стамины"
+     ],
+     [
+      "Weight Twist, no weight: 0.165 → 0.19 Durability",
+      "Weight Twist без веса: 0.165 → 0.19 выносливости"
+     ],
+     [
+      "Weight Twist, weight 1: 0.155 → 0.178 Durability",
+      "Weight Twist, вес 1: 0.155 → 0.178 выносливости"
+     ],
+     [
+      "Weight Twist, weight 2: 0.145 → 0.166 Durability",
+      "Weight Twist, вес 2: 0.145 → 0.166 выносливости"
+     ],
+     [
+      "Weight Twist, weight 3: 0.137 → 0.155 Durability",
+      "Weight Twist, вес 3: 0.137 → 0.155 выносливости"
+     ],
+     [
+      "Durability Training: 0.0045 → 0.0055 per 1% HP lost; min 0.0006 → capped at 0.00065; max 0.025 → 0.0275",
+      "Тренировка выносливости (Durability Training): 0.0045 → 0.0055 за 1% потерянного HP; минимум 0.0006 → кап 0.00065; максимум 0.025 → 0.0275"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "New trainings rebalance",
+     "Ребаланс новых тренировок"
+    ],
+    "items": [
+     [
+      "Bicycle Crunch: Durability 0.075 → 0.11, Stamina 0.05 → 0.1",
+      "Bicycle Crunch: выносливость 0.075 → 0.11, стамина 0.05 → 0.1"
+     ],
+     [
+      "Kettlebell Pistol Squat, no weight: Strength 0.14 → 0.12, Agility 0.11 → 0.1, LM 0.16 → 0.12",
+      "Kettlebell Pistol Squat без веса: сила 0.14 → 0.12, ловкость 0.11 → 0.1, LM 0.16 → 0.12"
+     ],
+     [
+      "Kettlebell Pistol Squat, weight 1: Strength 0.13 → 0.11, Agility 0.1 → 0.09, LM 0.19 → 0.15",
+      "Kettlebell Pistol Squat, вес 1: сила 0.13 → 0.11, ловкость 0.1 → 0.09, LM 0.19 → 0.15"
+     ],
+     [
+      "Kettlebell Pistol Squat, weight 2: Strength 0.11 → 0.09, Agility 0.09 → 0.08, LM 0.23 → 0.19",
+      "Kettlebell Pistol Squat, вес 2: сила 0.11 → 0.09, ловкость 0.09 → 0.08, LM 0.23 → 0.19"
+     ],
+     [
+      "Speedball: Agility 0.025 → 0.125, Battle Sense 0.01 → 0.05, interval 0.15s → 0.45s",
+      "Speedball: ловкость 0.025 → 0.125, Battle Sense 0.01 → 0.05, интервал 0.15 с → 0.45 с"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Systems",
+     "Системы"
+    ],
+    "items": [
+     [
+      "If your Agility is 30% higher than your Strength, it contributes to stamina drain instead, at 75% effectiveness",
+      "Если ловкость на 30% выше силы, расход стамины считается от неё с эффективностью 75%"
+     ]
+    ]
+   },
+   {
+    "h": [
+     "Gun Park rewards",
+     "Награды Gun Park"
+    ],
+    "items": [
+     [
+      "Guaranteed: ₩1,000,000 → ₩1,250,000; 75 → 100 stats",
+      "Гарантированная: ₩1 000 000 → ₩1 250 000; 75 → 100 статов"
+     ],
+     [
+      "Common: ₩1,000,000 → ₩1,500,000; 25 → 75 RC; 50 → 75 stats",
+      "Обычная: ₩1 000 000 → ₩1 500 000; 25 → 75 RC; 50 → 75 статов"
+     ],
+     [
+      "Rare: ₩1,250,000 → ₩2,000,000; 50 → 100 RC; 75 → 125 stats",
+      "Редкая: ₩1 250 000 → ₩2 000 000; 50 → 100 RC; 75 → 125 статов"
+     ],
+     [
+      "Legendary: ₩3,500,000 → ₩5,000,000; 100 → 175 RC; 100 → 150 stats",
+      "Легендарная: ₩3 500 000 → ₩5 000 000; 100 → 175 RC; 100 → 150 статов"
+     ],
+     [
+      "Mythic: 150 → 250 RC; 150 → 200 stats",
+      "Мифическая: 150 → 250 RC; 150 → 200 статов"
+     ]
+    ]
+   }
+  ]
  }
 ]
