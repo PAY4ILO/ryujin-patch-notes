@@ -4,12 +4,6 @@
 // New posts go anywhere in the list: the page sorts by d.
 window.PATCHES = [
 {
-  id: "dc-1565440785225097391", d: "2026-10-29 22:02", tr: false,
-  items: [
-    ["Twister Productions #📜│updates", "Twister Productions #📜│updates"]
-  ]
-},
-{
   id: "dc-1565612090973102226", d: "2026-10-30 09:23", tr: false,
   items: [
     ["Ryujin Update 1.9", "Ryujin Update 1.9"],
