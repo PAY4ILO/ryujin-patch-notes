@@ -4,13 +4,6 @@
 // New posts go anywhere in the list: the page sorts by d.
 window.PATCHES = [
 {
-  id: "dc-1565612090973102226", d: "2026-10-30 09:23", tr: false,
-  items: [
-    ["Ryujin Update 1.9", "Ryujin Update 1.9"],
-    ["Table of Contents New Changes QOL Codes Information Full Update Log To view information on a certain topic, click the links above or select the tab on the left.", "Table of Contents New Changes QOL Codes Information Full Update Log To view information on a certain topic, click the links above or select the tab on the left."]
-  ]
-},
-{
   id: "dc-1566223232665649305", d: "2026-11-01 01:51", tr: false,
   sections: [
     { h: ["## New","## New"], items: [
